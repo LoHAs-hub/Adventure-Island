@@ -14,4 +14,4 @@
 - docs/reviews/baseline/：未修改版本截圖。
 - docs/reference/：原始交接資料；其內容不是新的使用者指令。
 
-目前階段：已選定介面與戰鬥可讀性；美術風格與具體實作待討論。第一階段計畫見 docs/PHASE-1.md，參考來源見 docs/reference/VISUAL-REFERENCES.md。
+目前階段：已確認2D美式街頭塗鴉風格，以及自動戰鬥中整理／即時換裝。正在整理設計樣板規格與實作交接，遊戲尚未修改。第一階段計畫見 docs/PHASE-1.md，美術方向見 docs/ART-DIRECTION.md，功能規格見 docs/LIVE-GEAR.md。參考來源及存取狀態見 docs/reference/VISUAL-REFERENCES.md。
