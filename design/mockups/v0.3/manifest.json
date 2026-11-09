@@ -1,0 +1,19 @@
+{
+  "version": "0.3",
+  "status": "design-review-not-approved",
+  "game_baseline_commit": "32ce25227de772ce470e82826c9d77af0e9755a5",
+  "game_sha256": "63a018e13af27da20a7493918ecb3719faba09a1059a36fb6dd0da96529c09be",
+  "prototype": "index.html",
+  "files": {
+    "DESIGN-NOTES.md": "25d9ec26188016dfd09cf4f1b424f6aac48bdc5ecfa0bddb26c53d33f08b7c3e",
+    "README.md": "5c003f95bddb2a76e9169f9dcd14ba394fb6b260db9b225873482fda11c3efa2",
+    "REVIEW-PROMPT.md": "f5263bde8a14840ef45aafc87591a7ab10df9379eeead45509b32427d6c4f227",
+    "VALIDATION.md": "0b5304f4c15e03006de2d0b624f6b33ada9011114d4f924732d27bbc8933d71b",
+    "index.html": "a15939494b26981b77e78d1fe28541d6408d378c41c3c717bb2d9d08578f8273",
+    "screenshots/01-battle-gear.png": "298f0d86d4b46744bc9838e37b90ce9ac4230836adc0c1b55d256fad965c6cdf",
+    "screenshots/02-components.png": "3837a5259ce7e0faf3e6b0699bc052dc64cdf0e8b56d0cfb724640710e1eb405",
+    "screenshots/03-loot-flow.png": "87a7ad11cffbdbb757236854c4e466e97f6d6f9760e1bea26c76450db1904ab6",
+    "screenshots/04-equipped.png": "ee9f0424185d612f4cc61082f5fced8ade1d2d53a9442de3d8ec9a508cc2c2f6",
+    "screenshots/05-stats.png": "13e8e8fff8ba12589e08edd84b41d0dc855f15001f039f582168584b5800f89d"
+  }
+}
