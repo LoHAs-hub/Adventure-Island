@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "checked": [
+    "five pages rendered",
+    "equipment totals update and HP does not heal",
+    "swap back restores totals",
+    "selection preserved through filter/sort",
+    "lock toggle",
+    "theme specification dialog/Escape",
+    "collapse/expand",
+    "viewport overflow",
+    "no external requests"
+  ],
+  "layouts": [
+    {
+      "width": 1280,
+      "page": "game",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "page": "kit",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "page": "flow",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "page": "systems",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "page": "art",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "game",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "kit",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "flow",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "systems",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "art",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "page": "game",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "page": "kit",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "page": "flow",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "page": "systems",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "page": "art",
+      "overflow": false
+    },
+    {
+      "width": 800,
+      "page": "game",
+      "overflow": false
+    },
+    {
+      "width": 800,
+      "page": "kit",
+      "overflow": false
+    },
+    {
+      "width": 800,
+      "page": "flow",
+      "overflow": false
+    },
+    {
+      "width": 800,
+      "page": "systems",
+      "overflow": false
+    },
+    {
+      "width": 800,
+      "page": "art",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "page": "game",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "page": "kit",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "page": "flow",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "page": "systems",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "page": "art",
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "offlineAfterLoad": {
+    "passed": true,
+    "fileProtocol": false,
+    "fileProtocolLimitation": "Managed Chromium blocks file navigation",
+    "offlineAfterHttpLoad": true,
+    "pages": 5,
+    "timerContinuesOnManagerToggle": true,
+    "timerPausesOnDemoControl": true,
+    "pageErrors": []
+  },
+  "tokenContrastRatios": {
+    "ink/primary": 10.39,
+    "ink/paper": 13.45,
+    "mutedText/paper": 5.44,
+    "positiveText/positiveSurface": 6.96,
+    "dangerText/dangerSurface": 5.8,
+    "paper/dangerSolid": 5.21,
+    "focus/paper": 5.85
+  }
+}

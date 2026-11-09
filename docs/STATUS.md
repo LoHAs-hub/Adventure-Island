@@ -1,21 +1,28 @@
 # 目前狀態
-更新：2026-11-09（Asia/Taipei）
-階段：v0.3樣板檢視與回饋。使用者已確認街頭塗鴉風格，以及自動戰鬥中整理、換裝、立即更新能力。遊戲未修改。
+
+更新：2026-11-09。階段：v0.4全版美術設計與實作交接已完成；正式遊戲仍為原始基準。
+
+## 最新決策
+
+保留粗硬程度與左戰鬥／右管理；淺藍主色、平順線條、減少外凸尖角。優先掉寶、裝備與素質；戰鬥中可整理／即時換裝。使用者要求依此更新全版美術並提供Prompt與檔案包。見ADR-002與DECISIONS。
 
 ## 已完成
-原始HTML/DOCX盤點、基準截圖與Harness；基準commit 32ce252已推送origin/work。
-前輪記錄ADR-001、ART-DIRECTION、LIVE-GEAR、PHASE-1及交接Prompt草案v0.2。
-本輪完成design/mockups/v0.3：三頁獨立互動HTML、五張狀態截圖、設計說明／Prompt／驗證／manifest與ZIP樣板包。街頭風角色與場景為概念SVG示意。
-靜態核對statsOf、cpWith、addInv、mkP/refreshP、選單與背包變更、loop、net hello；原碼具refreshP，但裝備變更尚未統一連接在場刷新。
 
-## 已驗證及限制
-上一輪：系統Chromium+Playwright，隔離測試環境1440×900，封面、主選單、建立角色、養成裝備頁、轉蛋頁、第一關短暫自動戰鬥，未觀察到pageerror。基準腳本語法通過。
-本輪已測試樣板換裝、篩選／排序／鎖定與素質更新，無pageerror。1280／1440／1920／800寬無水平溢出，矮視窗需要垂直捲動。這些是演示測試，不能宣稱正式遊戲即時換裝已實作。
-五個使用者參考網址先前受環境代理403限制，尚未讀到內容；目前美術方向直接來自使用者描述。
-尚未做全職業、舊存檔、連線、高低畫質、不同視窗的功能回歸。
+- 保留原始HTML／DOCX、代碼盤點與基準截圖，SHA見reference/BASELINE.md。
+- design/mockups/v0.4：五頁獨立互動樣板、七張截圖、44個靜態SVG參考（裝備／操作圖示、角色、13敵方母型、3個夥伴示例）。
+- handoff/v0.4：正式Prompt、全版美術與素材規格、tokens、47列COVERAGE（26面板節點＋21分類／系統）、分批順序、正式驗收與完整ZIP。
+- 更新Harness協作入口、決策帳本、ADR與本狀態，已定案方向不再列為待確認。
+
+## 驗證與界線
+
+樣板：Chromium／Playwright，五頁渲染；換裝／換回能力更新且HP不免費補滿、篩選／排序保留選取、鎖定、收合、規格彈窗／Escape；390／800／1280／1440／1920寬無水平溢出；無pageerror、無外部資源請求。矮桌機仍需捲動，正式整合規則見ART-SPEC。
+
+原遊戲保持原SHA，腳本語法檢查通過。完整包有SHA-256 manifest與驗證程式；封裝內容含原始遊戲、DOCX背景、Harness與全部v0.4設計資料。詳見樣板VALIDATION及handoff/v0.4/RELEASE.json（ZIP內以根目錄manifest.json為準）。
+
+這些結果不代表正式即時換裝、全素材動畫、舊存檔、多人連線、高低畫質與效能已驗證。正式遊戲尚未套用美術，完整變體與動畫由實作端製作。使用者提供的五個參考網址先前受代理403限制未讀到內容，本版依使用者描述與原碼設計，無引用其圖像。
 
 ## 下一步
-請使用者檢視v0.3的粗硬程度、主色與布局。依回饋調整樣板；樣板中的色碼與尺寸仍是提案。
-確認後凍結規格，將正式Prompt、原始遊戲與對照素材封裝給實作端。
-已定案的即時整理／換裝不得退回結算後生效。連線與即時背包一致性屬必要核對項。
-Git：origin為https://github.com/LoHAs-hub/Adventure-Island.git，使用work分支保存設計協作。
+
+實作端解壓、驗證後讀AGENTS與handoff/v0.4/IMPLEMENTATION_PROMPT.md，按M0～M5推進。逐列更新COVERAGE實作狀態／證據，完成正式遊戲功能回歸與前後對照。不需重新詢問已確認的主色方向或左右布局。
+
+Git遠端：https://github.com/LoHAs-hub/Adventure-Island.git；分支work。歷史：32ce252基準、3409a0c方向／即時換裝、ffdd5e9 v0.3樣板；本版以Git HEAD查詢提交識別。

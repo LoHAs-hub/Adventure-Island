@@ -1,0 +1,131 @@
+{
+  "version": "0.4",
+  "direction": "light-blue / smooth bold street-comic",
+  "color": {
+    "ink": "#202A32",
+    "paper": "#F3F6F8",
+    "surface": "#FBFCFD",
+    "primary": "#B9DFF6",
+    "primaryHover": "#9DCEEC",
+    "primaryPressed": "#86BDDF",
+    "mutedText": "#526775",
+    "borderMuted": "#C2CED5",
+    "positiveText": "#245840",
+    "positiveSurface": "#E1EFE8",
+    "dangerText": "#8C303A",
+    "dangerSurface": "#F5D2D6",
+    "dangerSolid": "#B93846",
+    "focus": "#24658B"
+  },
+  "rarity": [
+    {
+      "index": 0,
+      "name": "普通",
+      "color": "#C9CED6"
+    },
+    {
+      "index": 1,
+      "name": "精良",
+      "color": "#5FE08F"
+    },
+    {
+      "index": 2,
+      "name": "稀有",
+      "color": "#4EA8FF"
+    },
+    {
+      "index": 3,
+      "name": "史詩",
+      "color": "#C77DFF"
+    },
+    {
+      "index": 4,
+      "name": "傳說",
+      "color": "#FFAE1A"
+    },
+    {
+      "index": 5,
+      "name": "神話",
+      "color": "#FF3D6E"
+    },
+    {
+      "index": 6,
+      "name": "天金",
+      "color": "#FFE94D"
+    }
+  ],
+  "radiusCssPx": {
+    "outer": 16,
+    "panel": 12,
+    "control": 8,
+    "tile": 7
+  },
+  "strokeCssPx": {
+    "outer": 4,
+    "panel": 3,
+    "control": 2,
+    "divider": 1
+  },
+  "shadowCssPx": {
+    "offsetX": 3,
+    "offsetY": 3,
+    "blur": 0
+  },
+  "fontCssPx": {
+    "title": [
+      24,
+      32
+    ],
+    "section": [
+      16,
+      20
+    ],
+    "body": [
+      14,
+      16
+    ],
+    "table": [
+      12,
+      14
+    ],
+    "secondary": [
+      11,
+      12
+    ]
+  },
+  "motionMs": {
+    "hover": 120,
+    "press": 90,
+    "panel": 160,
+    "lootEnter": 200,
+    "lootHold": 3000
+  },
+  "layout": {
+    "battleFraction": 0.58,
+    "managerFraction": 0.42,
+    "gapCssPx": 18,
+    "canvasLogic": [
+      800,
+      450
+    ],
+    "testViewports": [
+      [
+        1280,
+        720
+      ],
+      [
+        1440,
+        900
+      ],
+      [
+        1920,
+        1080
+      ]
+    ]
+  },
+  "svg": {
+    "linejoin": "round",
+    "linecap": "round",
+    "preserveAspectRatio": "xMidYMid meet"
+  }
+}

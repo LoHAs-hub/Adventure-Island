@@ -1,0 +1,450 @@
+{
+  "package": "Adventure-Island-Art-Handoff",
+  "version": "0.4",
+  "date": "2026-11-09",
+  "baseline_commit": "32ce25227de772ce470e82826c9d77af0e9755a5",
+  "previous_design_commit": "ffdd5e9f4d56463b7fc54828a069b00a3704486e",
+  "baseline_game_sha256": "63a018e13af27da20a7493918ecb3719faba09a1059a36fb6dd0da96529c09be",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1592,
+      "sha256": "eac0b67493aaf66502114c393bcf8ebe1717759a79f4f838fa760df7be544818"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1740,
+      "sha256": "ddab17051a3206fab8ff658262d7fb1b62af1a39d2f699f63cc62ab692be6a01"
+    },
+    {
+      "path": "design/mockups/v0.4/README.md",
+      "bytes": 1437,
+      "sha256": "743fab5a9dc4450ffa2c04ca80a4b75a713f977a8dc79e5658a444e10b735e53"
+    },
+    {
+      "path": "design/mockups/v0.4/VALIDATION.md",
+      "bytes": 2159,
+      "sha256": "6fcdc68a318004e6be7bdbb8089b598cd7cebdbefe526557abf682e958fea466"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-bat.svg",
+      "bytes": 522,
+      "sha256": "6bdf1e489f39834ed4f9c6901df55542fda2a0da528b3e089aa10931c7b5966f"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-beast-xuanwu.svg",
+      "bytes": 694,
+      "sha256": "2e8d7535636b5206100609a8ee911b58101538c93bbd7b9b08aa535ca55a7fb3"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-boar.svg",
+      "bytes": 652,
+      "sha256": "5871cf08101ab5d8b08c3a46bfdce36288cf59b3e33bf07f59065d1b7cff8b3f"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-chest.svg",
+      "bytes": 579,
+      "sha256": "b0c28415bf2b1976422ff3980d6758f64ed3d10f0b3dc2b70e2fa027712d067e"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-crab.svg",
+      "bytes": 757,
+      "sha256": "8a866b8bb0a3111a1333ded18d6dd1762aa1a00b09ea52eb81c956895c84a31d"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-crystal.svg",
+      "bytes": 496,
+      "sha256": "39b520f02fbe72d2bfdfe0b1f05f8e55a84075e7a04037ac5bf7a42e6b6bb24d"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-dragon.svg",
+      "bytes": 654,
+      "sha256": "90525c82111754d3ed81032037edfdd43d2ac09cdd3715c4d0682793040320e8"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-golem.svg",
+      "bytes": 694,
+      "sha256": "187b7c0f4ffd52460025c736c85793bdf9cb102dd443c784f66088fa161f00c7"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-man.svg",
+      "bytes": 569,
+      "sha256": "ab259de4dc1063a6b7518a7a27f6b48248ea03bd30c6c3da8f065efebbb9c799"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-pet-moon.svg",
+      "bytes": 557,
+      "sha256": "9af880be2c7d9bd2206bbe8d7f34350d7128b8bc7f37e744fe23a2e45403abdc"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-pet-star.svg",
+      "bytes": 596,
+      "sha256": "1ae2c9da23b800af5bbdb1d6f131e172b383358ecdb74f815af35e9cc84c5777"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-shroom.svg",
+      "bytes": 507,
+      "sha256": "760bb32da9180d7f41540f9b1eef26c42af6015dae923d8043fbb1e66165f912"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-slime.svg",
+      "bytes": 480,
+      "sha256": "fa3de6a3b3d5505e8813c59b38869ac43b54fca69487f98bb53c2b2d22503512"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-snail.svg",
+      "bytes": 632,
+      "sha256": "a419d4d6082b9d3858b71ea59863f2998a6ed9ec936a60533c2c388e76396d80"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-stump.svg",
+      "bytes": 565,
+      "sha256": "04aff856f4843724d6d0a0f4f095b7a91413418c55283168ecd2806f4578cc60"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/a-wisp.svg",
+      "bytes": 489,
+      "sha256": "fb211adb23cc28f282c81ae604c66ced1e7db5e6844369e92557699d341d4b3a"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/hero.svg",
+      "bytes": 1281,
+      "sha256": "405e9c695701ae7adc5c62e4ddea29a23fdd139bf72c353009d883ae708eda0a"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-arrow.svg",
+      "bytes": 286,
+      "sha256": "bbfd986f3efadd793f52cc579072917b61a865192db7f4da0e2903a5cd8bf086"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-belt.svg",
+      "bytes": 526,
+      "sha256": "d8a784f9470d99b0500549499f04bbfc67794b1614de39074eca86b4fa4808d2"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-boots.svg",
+      "bytes": 513,
+      "sha256": "d1aefe467cf3f6e3104978ed1e28e916f58179f3479c9a77fa58eca8a8d35f9a"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-bow.svg",
+      "bytes": 449,
+      "sha256": "f177879795acea1985b791f8c4734dab8b930abd8985d1670c019060f582ea32"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-check.svg",
+      "bytes": 227,
+      "sha256": "3d3c805a8f985f7c043eca2ba946d2e20a0f52b7cde465cb61ef4809d1cd4acf"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-claw.svg",
+      "bytes": 444,
+      "sha256": "a41eef62295b0142c833b5b2aa4d20556ee3d0a8fb6537e6d43f149b96150888"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-cleaver.svg",
+      "bytes": 656,
+      "sha256": "28ad41bb011ae39579e2e58dfc0983f977b5dc484fd02f6fd4d20051a51ac6cf"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-coat.svg",
+      "bytes": 491,
+      "sha256": "17f0d58fdb8d5c1faaf97164039709528435f0788d51cb4fc7e6a610c0b32107"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-coin.svg",
+      "bytes": 412,
+      "sha256": "7acbb1370a250e9da8cb577adfea654aaa20309943995c3c745365fc837f1aef"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-dust.svg",
+      "bytes": 312,
+      "sha256": "546acdbcc9b8751d96f3db0369255c2c7bffab9a8ca764e78a3488c57a4ab9d9"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-gear.svg",
+      "bytes": 347,
+      "sha256": "d2cb761b06afaf5790cfd3136ef20ced1418bd403f80e6f5672fc922d1426a2d"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-glove.svg",
+      "bytes": 462,
+      "sha256": "88cee4df7ee8cb5602fa444975aef4225b172c42726857f3e1401e3f41444da3"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-helmet.svg",
+      "bytes": 559,
+      "sha256": "65fb21e6410b28ee08e1df6bd59c6b81c0d91506516876819b3b649c69ad730e"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-knuckle.svg",
+      "bytes": 463,
+      "sha256": "4b47fb7ddfba75e1920a2bf64a5078474b119a318e1121ed3503b4b601f8fa4b"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-lock.svg",
+      "bytes": 305,
+      "sha256": "566dbe00638b122f4bf695c3b1e3be1b5e2a617374416fcc6e1beb8042d7ed5b"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-medal.svg",
+      "bytes": 482,
+      "sha256": "5b0a432f06d6ab674b379f2865111c91ae5f8be2074ba3fc906c0e239393ab56"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-neck.svg",
+      "bytes": 471,
+      "sha256": "34c5d224308e51f0c3a29f3d5f213d1ca5325f01bf7339fbe294e8720f2f0dab"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-pants.svg",
+      "bytes": 391,
+      "sha256": "5cea574cfdaa03f421ec2fdd9ed52cd55fb76a932697e78fe90953b75805737a"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-pistol.svg",
+      "bytes": 414,
+      "sha256": "2a224ebbb1938a0524614df12cc95fccf4d5954ce5154b8103dcfa2a33f194a6"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-ring.svg",
+      "bytes": 586,
+      "sha256": "0dda88b094c964c6faa905ae6db05d1faa6e65ee05ec03178bbddbae0fa66e13"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-shield.svg",
+      "bytes": 515,
+      "sha256": "cf2ec0757e22aa4c9d2f73a8ddc8be58445ce49769344656818b1aa9facd2bd3"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-shoulder.svg",
+      "bytes": 398,
+      "sha256": "0f2075dde0f883145932da734f1724ff7cc2f257357ad1e25cd2171b613265f1"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-skill.svg",
+      "bytes": 248,
+      "sha256": "2e473e2db2edf5b9c01fd5c0d758befcb1f8c77460451861151f051e540585f6"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-staff.svg",
+      "bytes": 476,
+      "sha256": "e336f5a0b90e79ed184deb5e022e00c7a93dbea395743341767e5461c393fbe3"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-star.svg",
+      "bytes": 389,
+      "sha256": "300c558ad100b9bb61c1e8c21213d5ef7bd84cac601b11bc1919a68cfcc84f34"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-sword.svg",
+      "bytes": 583,
+      "sha256": "b2e25bd2417c35b2aeebfeec36ccad078b2f2c95381b02be6d63781000993b44"
+    },
+    {
+      "path": "design/mockups/v0.4/assets/i-unlock.svg",
+      "bytes": 306,
+      "sha256": "777c638c75b59db0b29a7cf907cd716c9433a4f53592ec93c620f4b3a93b594f"
+    },
+    {
+      "path": "design/mockups/v0.4/index.html",
+      "bytes": 102356,
+      "sha256": "43aeb8d9d3c842e611c66983d139f65430b7c6afecd145fca8de31e50fbcfa18"
+    },
+    {
+      "path": "design/mockups/v0.4/screenshots/01-battle-gear.png",
+      "bytes": 305331,
+      "sha256": "79c40750fd58cccd76561df76f08fe6677ae496d601d94cf1bc7c15c389d5e1b"
+    },
+    {
+      "path": "design/mockups/v0.4/screenshots/02-components.png",
+      "bytes": 222028,
+      "sha256": "113537aae4bdbbb8df3d7ffa4b02bbb93ca329b47298ad032419995aa640c36c"
+    },
+    {
+      "path": "design/mockups/v0.4/screenshots/03-loot-flow.png",
+      "bytes": 168812,
+      "sha256": "dc4a627e59d02a74e3a7786be894b04da70fc21c8495dec33f2adffd45676f92"
+    },
+    {
+      "path": "design/mockups/v0.4/screenshots/04-all-systems.png",
+      "bytes": 282319,
+      "sha256": "73a88bb1ad0cdd39fbcedd882ef2acffbb521d99bb536ac023b6ca78c88ab5d7"
+    },
+    {
+      "path": "design/mockups/v0.4/screenshots/05-art-direction.png",
+      "bytes": 353654,
+      "sha256": "d1c4ccf71298c4b1fbeec01cf405eaa884e17f3dcfc28964a40fa66afd622c83"
+    },
+    {
+      "path": "design/mockups/v0.4/screenshots/06-equipped.png",
+      "bytes": 292045,
+      "sha256": "d70f7847a98acb53f2240075445734d0de1ab3fab0912e5d217eccd0d0c5f5a3"
+    },
+    {
+      "path": "design/mockups/v0.4/screenshots/07-stats.png",
+      "bytes": 258157,
+      "sha256": "9b6a8f89470a98ff3d903234b13e017b375722e4cf7fb28ed947e167b5fc776b"
+    },
+    {
+      "path": "design/mockups/v0.4/validation.json",
+      "bytes": 2929,
+      "sha256": "422b70e61d7752047b8b21b20992f1c655453e0d921bd70ad54ca5779dd1542d"
+    },
+    {
+      "path": "docs/ART-DIRECTION.md",
+      "bytes": 1216,
+      "sha256": "6339d83fb33f2b103fdd373e638be920a5d871cea4085a90bfe9a1755e2f807c"
+    },
+    {
+      "path": "docs/ART-INVENTORY.md",
+      "bytes": 7705,
+      "sha256": "4adfad5b108ad22642858e1cbf9463eda790ec2cf4b17ee4b1e31f3fb37ad0b7"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "bytes": 2408,
+      "sha256": "8ca260b68d8d13d4c693b32fa3f25965293bed3fa880b484564075f72c712aea"
+    },
+    {
+      "path": "docs/LIVE-GEAR.md",
+      "bytes": 5495,
+      "sha256": "973fdd1da46b5db24bde16c0138f5143aa70f0df6baed26a3026206e6a60c23b"
+    },
+    {
+      "path": "docs/PHASE-1.md",
+      "bytes": 971,
+      "sha256": "ff686cb27f6c8f7f6a8807a7643c1ba34654763818f3f656afbd121d2d728971"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "bytes": 2356,
+      "sha256": "03b5301465c9527de89599ceff7e0c30c933d0839694b8e8e9cd8971b5496737"
+    },
+    {
+      "path": "docs/decisions/ADR-001-street-art-auto-battle.md",
+      "bytes": 1331,
+      "sha256": "6f09f1f1624f839d0e4d4576c7a83fce793cbacda1ae8bd9d75bb35fc2b04b23"
+    },
+    {
+      "path": "docs/decisions/ADR-002-light-blue-smooth-contours.md",
+      "bytes": 1659,
+      "sha256": "2f5a7c988f36ac160862c3c8e1c9c2b49d273d09a6017e7b743418ff4368c0a6"
+    },
+    {
+      "path": "docs/handoff/PROMPT-v0.2.md",
+      "bytes": 2332,
+      "sha256": "06c06b939cd2cec84e690f97de7d886565cd852d81072813d38e8f70bd126bd6"
+    },
+    {
+      "path": "docs/reference/BASELINE.md",
+      "bytes": 287,
+      "sha256": "507b12235bf981cc4327fe9dcf2d96b1f1037827586b15931c0ef204449637fe"
+    },
+    {
+      "path": "docs/reference/VISUAL-REFERENCES.md",
+      "bytes": 1154,
+      "sha256": "78769888637f4d90c5702c0eaa047d9786a76bb0f5faed1fc0c5340d5d669cc7"
+    },
+    {
+      "path": "docs/reference/冒險島 開發資訊彙整（給 AI 接手優化用）.docx",
+      "bytes": 16296,
+      "sha256": "b76747e69a3125968bb872ff58ef047a02f722a041e10b3890692b043b61a7eb"
+    },
+    {
+      "path": "docs/reviews/baseline/battle.png",
+      "bytes": 637987,
+      "sha256": "9db0f68cf1f697d5ca477a056126f2d4bde7226cc8ddc879e793e3eecf06490a"
+    },
+    {
+      "path": "docs/reviews/baseline/character-hub.png",
+      "bytes": 653913,
+      "sha256": "11b8a014530341dc951583df7e0c006123bac2d8369023fe67047149470d52d2"
+    },
+    {
+      "path": "docs/reviews/baseline/gacha.png",
+      "bytes": 673714,
+      "sha256": "48b8ac25b4e0974ced42a97114c0a1c9c954173d08f6aa9a3fd34c5b3e4649bd"
+    },
+    {
+      "path": "docs/reviews/baseline/growth.png",
+      "bytes": 519073,
+      "sha256": "20dcb122deaa1ceec0c802cb4b6df7fa37478998a037148efce4ee5712d70f27"
+    },
+    {
+      "path": "docs/reviews/baseline/hub.png",
+      "bytes": 637112,
+      "sha256": "f276d08d6407d3573b1d2dc2ab4d5949a179772724419fff4dd9bdec6bcd4da7"
+    },
+    {
+      "path": "docs/reviews/baseline/title.png",
+      "bytes": 745981,
+      "sha256": "ba922db98f0e50b78d711d6ef94b12020db56be3fc2a3e056dad4bfb67ff4413"
+    },
+    {
+      "path": "game/index.html",
+      "bytes": 5201588,
+      "sha256": "63a018e13af27da20a7493918ecb3719faba09a1059a36fb6dd0da96529c09be"
+    },
+    {
+      "path": "handoff/v0.4/ACCEPTANCE.md",
+      "bytes": 4898,
+      "sha256": "1d5e0b44455ebb396c793e20cccaecdb01d2dcf47e322b1ec55f940e35ecfac4"
+    },
+    {
+      "path": "handoff/v0.4/ART-SPEC.md",
+      "bytes": 7104,
+      "sha256": "b3e4f5aa18db339b4268b427fca2f643b24a4751f6fdfa28b5ccd52c59b324b2"
+    },
+    {
+      "path": "handoff/v0.4/ASSET-GUIDE.md",
+      "bytes": 4808,
+      "sha256": "65f58fe91429f13d46660873ecb7d2bfd90152c55fe248b79d16f1c046546b98"
+    },
+    {
+      "path": "handoff/v0.4/COVERAGE.csv",
+      "bytes": 15864,
+      "sha256": "3b827cd2559f4aa66e68fe28d1d3fb8372e49bf87f000de2adf1548f3a8382dd"
+    },
+    {
+      "path": "handoff/v0.4/IMPLEMENTATION-PLAN.md",
+      "bytes": 1983,
+      "sha256": "0d149df70b374118f8c54370abadc3eef3237627883f2a0aad60bc88faa58344"
+    },
+    {
+      "path": "handoff/v0.4/IMPLEMENTATION_PROMPT.md",
+      "bytes": 6063,
+      "sha256": "e29fcb3eb4dce2d64fc012ed7caaae1158e2ef52c2d6d22eeb769a56e65a8c4a"
+    },
+    {
+      "path": "handoff/v0.4/README.md",
+      "bytes": 2172,
+      "sha256": "eb8e02155fddf9926f25b48353b44329dffa50200774dcbc584f37c2678378b0"
+    },
+    {
+      "path": "handoff/v0.4/design-tokens.css",
+      "bytes": 1267,
+      "sha256": "1d565afe644f11312ff3cdd0a37c2b94c51591f9ca0dca1f4324c023c7aae50d"
+    },
+    {
+      "path": "handoff/v0.4/design-tokens.json",
+      "bytes": 2088,
+      "sha256": "aa18398aa9a04242535dcf804b06efaabdaa86d27dae5e17000384cdefb5b5bf"
+    },
+    {
+      "path": "tools/check_mockup_v04.cjs",
+      "bytes": 3585,
+      "sha256": "6de83f27ca2c3d1461080f5528ec48fac1316c6d5e4cad74c93543cb562e6a98"
+    },
+    {
+      "path": "tools/check_syntax.py",
+      "bytes": 512,
+      "sha256": "248cf3401591065b5555fae9c66fc578dc09a6fa7c0d53c36b83e68b627c0668"
+    },
+    {
+      "path": "verify_package.py",
+      "bytes": 981,
+      "sha256": "27205441a387acafa5439d51aaed615a732353d6fe3a8fa88d7c4d79943af3d0"
+    }
+  ]
+}

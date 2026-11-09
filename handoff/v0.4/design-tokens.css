@@ -1,0 +1,39 @@
+/* v0.4 UI tokens; Canvas uses its original logical coordinates. */
+:root {
+  --ai-ink: #202A32;
+  --ai-paper: #F3F6F8;
+  --ai-surface: #FBFCFD;
+  --ai-primary: #B9DFF6;
+  --ai-primary-hover: #9DCEEC;
+  --ai-primary-pressed: #86BDDF;
+  --ai-muted-text: #526775;
+  --ai-border-muted: #C2CED5;
+  --ai-positive-text: #245840;
+  --ai-positive-surface: #E1EFE8;
+  --ai-danger-text: #8C303A;
+  --ai-danger-surface: #F5D2D6;
+  --ai-danger-solid: #B93846;
+  --ai-focus: #24658B;
+  --ai-radius-outer: 16px;
+  --ai-radius-panel: 12px;
+  --ai-radius-control: 8px;
+  --ai-radius-tile: 7px;
+  --ai-stroke-outer: 4px;
+  --ai-stroke-panel: 3px;
+  --ai-stroke-control: 2px;
+  --ai-stroke-divider: 1px;
+  --ai-motion-hover: 120ms;
+  --ai-motion-press: 90ms;
+  --ai-motion-panel: 160ms;
+  --ai-motion-loot-enter: 200ms;
+  --ai-motion-loot-hold: 3000ms;
+  --ai-font: "Noto Sans CJK TC", "Microsoft JhengHei", "PingFang TC", sans-serif;
+  --ai-shadow: 3px 3px 0 var(--ai-ink);
+}
+[data-rarity="0"] { --ai-rarity: #C9CED6; }
+[data-rarity="1"] { --ai-rarity: #5FE08F; }
+[data-rarity="2"] { --ai-rarity: #4EA8FF; }
+[data-rarity="3"] { --ai-rarity: #C77DFF; }
+[data-rarity="4"] { --ai-rarity: #FFAE1A; }
+[data-rarity="5"] { --ai-rarity: #FF3D6E; }
+[data-rarity="6"] { --ai-rarity: #FFE94D; }

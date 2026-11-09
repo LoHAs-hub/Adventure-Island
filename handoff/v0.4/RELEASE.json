@@ -1,0 +1,15 @@
+{
+  "package": "Adventure-Island-Art-Handoff-v0.4.zip",
+  "version": "0.4",
+  "bytes": 9400585,
+  "sha256": "9157f709cb9105f70b3a9699a52f93b13e4c8fa387fe51c722cdb7c15cef927d",
+  "manifest_files": 88,
+  "svg_references": 44,
+  "screenshots": 7,
+  "prototype_pages": 5,
+  "coverage_rows": 47,
+  "baseline_unchanged": true,
+  "manifest_verification": "passed",
+  "zip_crc_check": "passed",
+  "production_game_status": "original baseline; redesign not applied"
+}
