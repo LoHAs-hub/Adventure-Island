@@ -1,51 +1,22 @@
-> 最新：使用者拒絕上一輪d1942ae，現在從新上傳原始ZIP重做。舊完成／驗證敘述屬前次未通過嘗試；本輪以docs/STATUS及reviews/redo為準。
+# 冒險島：接手入口
 
-# 接手必讀：冒險島美術與實作交接
+更新：2026-11-10（Asia/Taipei）。目前是依使用者「前次不符預期，重新執行」要求完成的重做版；尚未取得使用者對本輪交付的驗收回覆。
 
-更新：2026-11-10（Asia/Taipei）。美術規格仍為 v0.4；本次補強背景與接手說明。最新完整交付使用 GitHub 專案 ZIP，根目錄應有本檔案。
+本輪直接從重新上傳 ZIP 的原始遊戲重做，沒有使用被拒絕的 d1942ae 作為輸入。原始檔保存在 `game/source/baseline.html`，SHA-256 `63a018e13af27da20a7493918ecb3719faba09a1059a36fb6dd0da96529c09be`。正式遊戲是 `game/index.html`；可維護來源為 `game/redesign/`，建置工具為 `tools/build_redesign.cjs`。
 
-最新正式版本已整合至 game/index.html；共用UI、左右管理、即時換裝、全系統與世界繪圖、轉蛋演出已套用。正式驗證與剩餘界線見 docs/reviews/implementation/VALIDATION.md，最新進度見 docs/STATUS.md。以下「接手時狀態」表為本次實作前歷史，不能用它覆蓋最新正式狀態。
+已完成 M0～M5 的實作與本環境驗證：共用 UI、桌機左戰鬥／右管理、固定背包／比較／主行動、掉落與角色素質、持續戰鬥中的換裝及養成同步、全部原介面、玩家／敵人／夥伴／場景／動作與事件繪圖。保留原玩法、資料、公式、掉率及攻擊判定。測試全部在正式遊戲執行，未將樣板示例搬成正式能力公式。
 
-你正在接手使用者自寫的既有 JavaScript／Canvas 2D 遊戲。已完成原碼／美術盤點、方向討論、互動樣板及工程交接；現在要依已確認方向套用正式遊戲。原始基準保留於Git 3625d38及舊設計ZIP；game/index.html現在是已整合的新正式版本。樣板的測試結果只代表示例互動，不代表正式遊戲已通過驗收。
+驗證包含三桌機尺寸／窄版、真實攻擊與灼燒快照、全部裝備修改入口抽測、固定 ID 批次、v3/v4/v5 舊資料遷移比對與匯入匯出、雙分頁房主／訪客及掉 ACK 重送／斷線重開、三畫質預警、17 頁文字對比與同機效能對照。未完整驗證外網 WebRTC、所有歷史實檔、全部交叉組合、跨設備長時間／背景休眠。細節以本輪 VALIDATION 為準。
 
-## 三分鐘理解任務
+閱讀順序：
 
-- 目標：統一全遊戲美術，改善自動戰鬥時看掉寶、整理裝備、比較能力的體驗。
-- 風格：2D 美式粗硬街頭塗鴉／漫畫感；粗框、高對比色塊、粗重文字；線條滑順，減少外凸尖角與斜切。
-- 主色與布局：淺藍，桌機左戰鬥／右管理；粗硬程度與左右布局已獲使用者接受。
-- 核心行為：戰鬥持續時可整理、換裝，能力立即影響當前出戰者。不得等結算或下一場才生效。
-- 優先順序：掉寶 → 裝備整理／比較 → 角色素質；其次轉蛋、升級與其餘系統。最新範圍是全版美術，後續批次仍須完成。
-- 分工：本聊天室整理需求、美術、樣板、Prompt與檔案包；新實作端聊天室負責修改原遊戲、整合功能、驗證與 Git 交付。
+1. [背景與需求演進](docs/PROJECT-CONTEXT.md)
+2. [協作規則](AGENTS.md)、[狀態](docs/STATUS.md)、[決策](docs/DECISIONS.md)
+3. [本輪驗證](docs/reviews/redo/VALIDATION.md)、[前後對照](docs/reviews/redo/COMPARISON.html)、[素材／程式映射](docs/reviews/redo/ASSET-MAP.md)
+4. [完整原實作需求](handoff/v0.4/IMPLEMENTATION_PROMPT.md)、ART-SPEC／ASSET-GUIDE／COVERAGE／IMPLEMENTATION-PLAN／ACCEPTANCE，以及 [LIVE-GEAR](docs/LIVE-GEAR.md)
 
-## 已完成、尚未完成
+使用者已確認：2D 美式粗硬街頭漫畫、順線粗框、淺藍主色、左右布局、自動戰鬥優先看掉寶／裝備／素質、戰鬥中立即換裝。不要再把這些當成等待風格確認的關卡。色碼與尺寸是 v0.4 設計落地值，不是使用者逐值指定。
 
-| 項目 | 接手時狀態 |
-|---|---|
-| 原始 HTML／DOCX、代碼與視覺物件盤點、基準截圖 | 已保存 |
-| 美術方向、體驗優先級、即時換裝、左右布局 | 使用者已確認 |
-| v0.4 五頁互動樣板、七張截圖、44 個靜態 SVG | 已完成，屬示例／參考資產 |
-| 全版規格、tokens、47 列覆蓋清單、驗收、實作 Prompt | 已完成 |
-| 正式遊戲套用全版美術、完整動畫／變體 | 尚未實作 |
-| 正式戰鬥中的即時裝備能力同步 | 尚未實作 |
-| 正式新版的舊存檔、多人、高低畫質、效能回歸 | 尚未驗證 |
+本輪下載：[可玩 ZIP](releases/Adventure-Island-v0.4-redo.zip)。完整專案可由 GitHub `work` 分支下載，附有原碼、測試與 Harness。舊設計 ZIP 是背景／樣板；`docs/reviews/implementation/` 與舊 playable ZIP 是被拒絕嘗試的歷史證據，不能當成本輪通過證明。
 
-## 閱讀順序
-
-1. [完整背景與需求演進](docs/PROJECT-CONTEXT.md)：理解為何做、哪些方向已定案及哪些舊提案已被取代。
-2. [協作規則](AGENTS.md)、[目前進度](docs/STATUS.md)、[決策來源](docs/DECISIONS.md)。
-3. [完整實作 Prompt](handoff/v0.4/IMPLEMENTATION_PROMPT.md) 及同目錄 ART-SPEC、ASSET-GUIDE、COVERAGE、IMPLEMENTATION-PLAN、ACCEPTANCE。
-4. [即時換裝工程約束](docs/LIVE-GEAR.md)；開啟 design/mockups/v0.4/index.html，對照原始 game/index.html。
-
-新聊天室可直接使用 [NEW-CHAT-PROMPT](handoff/v0.4/NEW-CHAT-PROMPT.md)，並附上完整 ZIP。只貼樣板圖會遺失工程需求，請連同原始遊戲與上述文件交接。
-
-## 原實作開場工作（歷史；後續先看最新STATUS與正式驗證）
-
-先確認完整專案 ZIP 內有本檔案與原始遊戲，核對來源 commit／基準，讀取已確認需求，回報你理解的目標／目前進度／首批工作，隨即依 M0～M5 推進；不把這段回報當成再次等待風格確認的關卡。首批聚焦共用元件、左右布局、掉寶／比較／素質，以及持續戰鬥中的換裝整合。
-
-精確色碼與尺寸是本版設計落地值，可直接使用；不是使用者逐值指定。原 DOCX 是背景，不能自動擴增功能或覆蓋使用者需求。不要把樣板示例數值當成正式公式，也不要把 44 個靜態 SVG 當成完整動畫庫。
-
-每次結束更新 docs/STATUS.md、必要的 DECISIONS／ADR，以及 COVERAGE.csv 的實作狀態與證據；使用已授權的 Git 遠端與分支保存。後續聊天室不應依賴讀取本次聊天紀錄才能繼續。
-
-## 下載版本辨識
-
-最新完整專案 ZIP 是 GitHub 對目前 `work` 分支或指定 commit 產生的原始碼封裝，包含本檔案、PROJECT-CONTEXT 與 NEW-CHAT-PROMPT。舊 `Adventure-Island-Art-Handoff-v0.4.zip` 保留設計基準，內含原先的 manifest／verify_package，但沒有本次新增的三份接手文件。新聊天室請附完整專案 ZIP，毋須再巢狀解壓舊包。檔案開啟／驗證方式見 [README](README.md)。
+原 DOCX 是背景參考，不自動擴增需求；44 個 SVG 是靜態輪廓與圖示參考，完整正式視覺另由程序繪圖與原動畫狀態產生。每批仍須更新 STATUS、COVERAGE 與必要決策，使用已授權的 Git 遠端與 `work` 分支，不改寫歷史。

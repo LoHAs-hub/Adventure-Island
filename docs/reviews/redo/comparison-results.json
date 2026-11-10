@@ -1,0 +1,51 @@
+{
+  "viewport": [
+    1440,
+    900
+  ],
+  "data": "Same original save loaded into both isolated contexts; same random seed and 90 original simulation frames. Both battle snapshots paused only for comparable capture.",
+  "sameSimulationState": true,
+  "state": {
+    "frame": 90,
+    "kills": 1,
+    "entities": [
+      {
+        "kind": "p0",
+        "x": 268.40000000000003,
+        "z": 47.892,
+        "hp": 2498
+      },
+      {
+        "kind": "m_slime",
+        "x": 433.47638928163997,
+        "z": 25.636463000755754,
+        "hp": 0
+      },
+      {
+        "kind": "m_shroom",
+        "x": 397.7810733579088,
+        "z": 42.34729981018231,
+        "hp": 48
+      },
+      {
+        "kind": "m_slime",
+        "x": 581.3481691431257,
+        "z": 91.6696123737469,
+        "hp": 38
+      },
+      {
+        "kind": "m_shroom",
+        "x": 598.233231884986,
+        "z": 75.81518832793465,
+        "hp": 65
+      },
+      {
+        "kind": "m_slime",
+        "x": 439.9549169231209,
+        "z": 21.543497988432645,
+        "hp": 52
+      }
+    ]
+  },
+  "errors": []
+}

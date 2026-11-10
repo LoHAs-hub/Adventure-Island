@@ -1,3 +1,5 @@
+> 歷史版本：本輪已被使用者判定不符預期。下列PASS只保留原記錄，不適用重做版；最新見 ../redo/VALIDATION.md。
+
 # 正式遊戲驗證紀錄
 
 2026-11-10（Asia/Taipei），Chromium／Playwright，Linux managed cloud。測試使用隔離 BrowserContext 與暫時存檔，未將玩家／測試存檔提交。對象為正式 game/index.html，非互動樣板。

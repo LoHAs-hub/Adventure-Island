@@ -8,7 +8,7 @@ const script=html.match(/<script>\s*([\s\S]*?)<\/script>/)[1],ast=acorn.parse(sc
 for(const n of ast.body)if(n.type==='VariableDeclaration'&&n.declarations.some(d=>d.id.name==='icoImg'))nodes.set('icoImg',n);
 const functions=new Map(),extra=[];
 for(const name of ['assets.js','art.js','gear.js','ui.js','effects.js']){const content=read('game/redesign/'+name),tree=acorn.parse(content,{ecmaVersion:'latest'});let ranges=[];for(const n of tree.body)if(n.type==='FunctionDeclaration'&&nodes.has(n.id.name)){functions.set(n.id.name,content.slice(n.start,n.end));ranges.push([n.start,n.end])}let c=content;for(const[a,b]of ranges.reverse())c=c.slice(0,a)+c.slice(b);extra.push(c)}
-const entry={render:'RUI.tick();',show:'',saveG:'',update:'',onSnap:'',onNet:'',autoStep:'',renderGrowth:''},tail={show:'RUI.shown(id);',saveG:'LiveGear.commit();',renderGrowth:'RUI.legacyChanged();'};
+const entry={render:'RUI.tick();if(!G){FR++;return;}',show:'',saveG:'',update:'',onSnap:'',onNet:'',autoStep:'',renderGrowth:''},tail={update:'LiveGear.commit();',guestTick:'LiveGear.commit();',show:'RUI.shown(id);',saveG:'LiveGear.commit();',renderGrowth:'RUI.legacyChanged();'};
 let edits=[];
 for(const [name,n]of nodes){if(functions.has(name)){edits.push([n.start,n.end,functions.get(name)]);continue}if(entry[name])edits.push([n.body.start+1,n.body.start+1,entry[name]]);if(tail[name])edits.push([n.body.end-1,n.body.end-1,';'+tail[name]])}
 let js=script;for(const[a,b,v]of edits.sort((a,b)=>b[0]-a[0]))js=js.slice(0,a)+v+js.slice(b);
@@ -35,11 +35,10 @@ patch('function stepP(f){','function stepP(f){if(f.disconnected)return;');
 patch('case"hello":if(NET.role!=="host")return;','case"hello":if(NET.role!=="host")return;if(G&&!G.over){if(!NET.ok)netSend("full",0);return}');
 patch('const g0=SVD.gold,r=gachaOne(ro);r.k=GK;', 'const receiptBefore=RUI.receiptSequence||0,g0=SVD.gold,r=gachaOne(ro);if((RUI.receiptSequence||0)!==receiptBefore)r.disposition=RUI.lastLoot.result;r.k=GK;');
 patch('job,wr:vis.wr||0','branch:br,job,wr:vis.wr||0');
-// Reuse exact original warning paths for a border pass, without duplicate labels.
-patch('for(const p of G.fx)dFx(p);\n  X.restore();','for(const p of G.fx)dFx(p);\n  Art.warningTop();\n  X.restore();');
+// The replacement render owns visual layering; simulation and hit tests remain original.
 // Initialize modules before the original load/start sequence.
 patch('loadSave();buildKM();offlineGain();',extra.join('\n')+'\nRUI.init();\nloadSave();buildKM();offlineGain();');
-fs.writeFileSync(path.join(root,'work/redo/compiled.js'),js);acorn.parse(js,{ecmaVersion:'latest'});
+fs.mkdirSync(path.join(root,'work/redo'),{recursive:true});fs.writeFileSync(path.join(root,'work/redo/compiled.js'),js);acorn.parse(js,{ecmaVersion:'latest'});
 html=html.replace(/<style>[\s\S]*?<\/style>/,()=>'<style>\n'+read('game/redesign/style.css')+'\n</style>');
 html=html.replace(/<script>\s*[\s\S]*?<\/script>/,()=>'<script>\n'+js+'\n</script>');
 fs.writeFileSync(path.join(root,'game/index.html'),html);console.log('Built original engine + redesign modules:',html.length,'characters');

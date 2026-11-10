@@ -1,0 +1,38 @@
+{
+  "checks": [
+    "V04: long title remains available in tooltip; large units and primary action fit at 1440×900",
+    "V04/B04: original level restriction visibly disables equip",
+    "I01/V02: keyboard focus survives equip DOM changes and Z does not pass into combat",
+    "G02/G05: actual fireShot and actual burn snapshot remain intact; original rollP uses updated actor stats at its original read time",
+    "B04/G03: other-character equipment is isolated; set threshold preview equals committed formal stats; original level-up heal remains",
+    "I01: actual HUD pointer toggle matches logical HUDA at DPR 2, two widths, and real full-screen",
+    "I02/E02: original endStage awards once; next-stage control starts correct stage and clears stale selection",
+    "V02/E02: confirmation Tab/Escape routes inside modal and returns focus to organizer",
+    "S01: original export download and file-input import confirmation round trip retains character/item IDs",
+    "E02: original offline gain and modal claim award once; immediate re-entry adds nothing"
+  ],
+  "simulation": {
+    "sameBattle": true,
+    "unchanged": true,
+    "burn": 5.000000000000001,
+    "burnPreserved": true,
+    "before": 308,
+    "after": 145,
+    "hp": 42,
+    "mp": 18,
+    "cd": 150,
+    "rage": 62
+  },
+  "boundaries": {
+    "otherSafe": true,
+    "setBefore": 1,
+    "setAfter": 2,
+    "previewMatches": true,
+    "notCommitted": true,
+    "up": true
+  },
+  "errors": [],
+  "limits": [
+    "Visibility throttling and physical device suspension are not simulated by these tests."
+  ]
+}

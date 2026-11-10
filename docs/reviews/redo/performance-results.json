@@ -1,0 +1,103 @@
+{
+  "method": "Same Chromium process, isolated contexts, fixed random seed, 1440×900, fixed 1200×675 Canvas backing, 37 entities / 50 particles / 80 items; each quality: 150 synchronous render calls + 20 actual item selections. No other test process runs concurrently.",
+  "results": [
+    {
+      "version": "original",
+      "quality": 0,
+      "render": {
+        "medianMs": 5.3999999994412065,
+        "p95Ms": 7.7999999998137355,
+        "maxMs": 16.200000000186265
+      },
+      "selection": {
+        "medianMs": 12.800000000745058,
+        "p95Ms": 71.30000000074506,
+        "maxMs": 71.30000000074506
+      },
+      "heapBytes": 10065672,
+      "backing": [
+        1200,
+        675
+      ],
+      "entities": 37,
+      "particles": 50,
+      "items": 80,
+      "renderBagMutations": 0,
+      "selectionBadgeMutations": 0
+    },
+    {
+      "version": "original",
+      "quality": 2,
+      "render": {
+        "medianMs": 4.900000000372529,
+        "p95Ms": 7.2999999998137355,
+        "maxMs": 14.299999999813735
+      },
+      "selection": {
+        "medianMs": 14.599999999627471,
+        "p95Ms": 18.899999999441206,
+        "maxMs": 18.899999999441206
+      },
+      "heapBytes": 9539265,
+      "backing": [
+        1200,
+        675
+      ],
+      "entities": 37,
+      "particles": 50,
+      "items": 80,
+      "renderBagMutations": 0,
+      "selectionBadgeMutations": 0
+    },
+    {
+      "version": "redo",
+      "quality": 0,
+      "render": {
+        "medianMs": 1.6000000005587935,
+        "p95Ms": 3.1000000005587935,
+        "maxMs": 4.3999999994412065
+      },
+      "selection": {
+        "medianMs": 4.900000000372529,
+        "p95Ms": 12.100000000558794,
+        "maxMs": 12.100000000558794
+      },
+      "heapBytes": 5776701,
+      "backing": [
+        1200,
+        675
+      ],
+      "entities": 37,
+      "particles": 50,
+      "items": 80,
+      "renderBagMutations": 0,
+      "selectionBadgeMutations": 20
+    },
+    {
+      "version": "redo",
+      "quality": 2,
+      "render": {
+        "medianMs": 1.599999999627471,
+        "p95Ms": 2.2000000001862645,
+        "maxMs": 5.2000000001862645
+      },
+      "selection": {
+        "medianMs": 4.5,
+        "p95Ms": 8.099999999627471,
+        "maxMs": 8.099999999627471
+      },
+      "heapBytes": 5762708,
+      "backing": [
+        1200,
+        675
+      ],
+      "entities": 37,
+      "particles": 50,
+      "items": 80,
+      "renderBagMutations": 0,
+      "selectionBadgeMutations": 0
+    }
+  ],
+  "errors": [],
+  "limits": "Microbenchmark and one heap snapshot; no claim of sustained device FPS, heap growth rate, or cross-device performance."
+}

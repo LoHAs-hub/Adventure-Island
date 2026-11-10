@@ -1,0 +1,107 @@
+{
+  "method": "Computed DOM foreground/background alpha compositing; 17 formal views, visible text nodes; large text threshold 3:1, normal 4.5:1. Excludes disabled/locked/decorative/SVG/Canvas text; this is not a Canvas contrast certification.",
+  "records": [
+    {
+      "view": "home",
+      "count": 43,
+      "minRatio": 5.33,
+      "failures": []
+    },
+    {
+      "view": "gear",
+      "count": 118,
+      "minRatio": 5.6,
+      "failures": []
+    },
+    {
+      "view": "stats",
+      "count": 92,
+      "minRatio": 5.6,
+      "failures": []
+    },
+    {
+      "view": "shop",
+      "count": 45,
+      "minRatio": 6.34,
+      "failures": []
+    },
+    {
+      "view": "quest",
+      "count": 57,
+      "minRatio": 4.9,
+      "failures": []
+    },
+    {
+      "view": "raid",
+      "count": 44,
+      "minRatio": 6.26,
+      "failures": []
+    },
+    {
+      "view": "gacha",
+      "count": 40,
+      "minRatio": 6.18,
+      "failures": []
+    },
+    {
+      "view": "salon",
+      "count": 115,
+      "minRatio": 5.44,
+      "failures": []
+    },
+    {
+      "view": "pets",
+      "count": 73,
+      "minRatio": 5.75,
+      "failures": []
+    },
+    {
+      "view": "beasts",
+      "count": 52,
+      "minRatio": 6.26,
+      "failures": []
+    },
+    {
+      "view": "guild",
+      "count": 42,
+      "minRatio": 6.34,
+      "failures": []
+    },
+    {
+      "view": "growth",
+      "count": 138,
+      "minRatio": 4.9,
+      "failures": []
+    },
+    {
+      "view": "skills",
+      "count": 189,
+      "minRatio": 4.9,
+      "failures": []
+    },
+    {
+      "view": "runes",
+      "count": 73,
+      "minRatio": 4.9,
+      "failures": []
+    },
+    {
+      "view": "artifacts",
+      "count": 93,
+      "minRatio": 4.9,
+      "failures": []
+    },
+    {
+      "view": "settings",
+      "count": 49,
+      "minRatio": 6.34,
+      "failures": []
+    },
+    {
+      "view": "modal",
+      "count": 6,
+      "minRatio": 6.34,
+      "failures": []
+    }
+  ]
+}

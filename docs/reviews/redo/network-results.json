@@ -3,9 +3,13 @@
   "checks": [
     "guest equip → host formula recompute → ACK → guest actor matches",
     "host equip → guest source stats update",
+    "lost ACK → same revision retry → idempotent host ACK",
     "stale epoch/revision ignored",
-    "unknown item rejected",
-    "disconnect remains dead, simulation does not revive missing guest"
+    "unknown item and forged known main stat rejected",
+    "host grant received/equipped without duplicate IDs",
+    "inventory ledger prunes retired IDs but protects events above receipt watermark",
+    "disconnect remains dead, simulation does not revive missing guest",
+    "return to lobby and reconnect starts a new accepted epoch"
   ],
   "errors": [],
   "unverified": [

@@ -20,3 +20,9 @@
 落雷視覺半徑改為48×24以符合原dz×2判定；衝撞預警涵蓋原f0=-30、f1=46+12×sc及30幀×9速度的整段路徑，深度±30。僅修正預警，不修改攻擊判定。27個實際bossSp／hitBox樣本與新顯示範圍一致。
 
 連線背包仍採原本本機存檔信任界線；物品ID清單、房主重算與場次／版本ACK是同步保障，不宣稱可驗證入房前存檔或本機強化亂數。連線冒險中先提供裝備／養成，轉蛋在返回大廳後使用（原版也沒有戰鬥中轉蛋入口）。
+
+M5來源補充：effects.js的render／titleLoop／teleHud／raidHud／hidHud／offArrows取代舊覆蓋效果；門在原世界錨點明確繪製，進化／蓄力／護盾破防與復活費用提示保留。art.js依原c.heads/tail/leaf/mane/bodyC/top/glow/crown顯示變體，wanc依原布林語意區分遠古與一般武器。
+
+NET入房清單使UID前進到已知ID之後，addInv對收到ID亦前進UID，既有ID不改號。ledgerV4依event接收水位裁剪，保護尚未到達的房主授予。原本本機帳號／養成信任界線未改為防作弊服務。
+
+正式對照採相同原版存檔與第90模擬幀，實體／位置／HP／擊倒數相等；comparison-results有斷言。效能與DOM對比見對應results，完整未驗證項見VALIDATION。

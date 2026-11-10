@@ -1,0 +1,98 @@
+{
+  "generated_utc": "2026-11-10T12:53:43.841051+00:00",
+  "environment": {
+    "os": "Linux",
+    "node": "24.22.1",
+    "chromium": "156.0.8078.79",
+    "automation": "Playwright",
+    "server": "Python HTTP 127.0.0.1:8000"
+  },
+  "baseline_sha256": "63a018e13af27da20a7493918ecb3719faba09a1059a36fb6dd0da96529c09be",
+  "game_sha256": "0c038cc906ccb2ec0fac0f3d65f406963e1af68b0ffb31a2eb7d91ed67c1e5cf",
+  "reproducible_build": true,
+  "syntax": "PASS",
+  "coverage_rows": 47,
+  "all_coverage_evidence_files_exist": true,
+  "checks": {
+    "core": {
+      "result": "PASS for documented executed cases",
+      "evidence": "docs/reviews/redo/core-results.json",
+      "sha256": "1a1ac73c10d068e77fdd5f036b05c8604532729f7b17258f22256a0302db045f",
+      "written_utc": "2026-11-10T12:51:10.990539+00:00"
+    },
+    "network": {
+      "result": "PASS for documented executed cases",
+      "evidence": "docs/reviews/redo/network-results.json",
+      "sha256": "dab4277ad3ffee1775f60c063afb5922b11019412e0ee7213483c2381ec2c2a5",
+      "written_utc": "2026-11-10T12:43:59.533483+00:00"
+    },
+    "event": {
+      "result": "PASS for documented executed cases",
+      "evidence": "docs/reviews/redo/event-results.json",
+      "sha256": "383b79f1ed67b4618b28d7f499a6efdfcb4a96a718871b0fde4ce7bb73678910",
+      "written_utc": "2026-11-10T12:43:51.769822+00:00"
+    },
+    "state": {
+      "result": "PASS for documented executed cases",
+      "evidence": "docs/reviews/redo/state-results.json",
+      "sha256": "3aed1d5bf48f22ad93e7496240455310c700429c44263eea3915639c96d8df01",
+      "written_utc": "2026-11-10T12:44:00.021461+00:00"
+    },
+    "views": {
+      "result": "PASS for documented executed cases",
+      "evidence": "docs/reviews/redo/views-results.json",
+      "sha256": "31cf2148822550e5c8a2ae96202db8c6abb476932668aed57b11f5eec2b2eb92",
+      "written_utc": "2026-11-10T12:44:24.596385+00:00"
+    },
+    "preservation": {
+      "result": "PASS for documented executed cases",
+      "evidence": "docs/reviews/redo/preservation-results.json",
+      "sha256": "a376c0b22e600b56537e17807b4c48d3e0f4f651ff44720abf2d21bdde86cd7d",
+      "written_utc": "2026-11-10T12:44:01.701387+00:00"
+    },
+    "art": {
+      "result": "PASS for documented executed cases",
+      "evidence": "docs/reviews/redo/art-results.json",
+      "sha256": "1de02068cacc5adb1e1737e3dfb095891b24523848cd1b49199585669f841c8a",
+      "written_utc": "2026-11-10T12:44:00.773428+00:00"
+    },
+    "hazard": {
+      "result": "PASS for documented executed cases",
+      "evidence": "docs/reviews/redo/hazard-results.json",
+      "sha256": "f93b459fe1232c393642f6a642a86fef6026b37c677aad4aaf978be2cfd1b0a2",
+      "written_utc": "2026-11-10T12:43:59.441486+00:00"
+    },
+    "contrast": {
+      "result": "PASS for documented executed cases",
+      "evidence": "docs/reviews/redo/contrast-results.json",
+      "sha256": "234f3a1bb467671184c92c8b62c89e304f2f0bb856b152e2ea65b4b60f80e216",
+      "written_utc": "2026-11-10T12:44:21.224533+00:00"
+    },
+    "performance": {
+      "result": "PASS for documented executed cases",
+      "evidence": "docs/reviews/redo/performance-results.json",
+      "sha256": "444f30c1684b1932b495ddd85e0b168b7c18a0a31d77ff7141b9c7efca254d78",
+      "written_utc": "2026-11-10T12:52:45.190409+00:00"
+    },
+    "comparison": {
+      "result": "PASS for documented executed cases",
+      "evidence": "docs/reviews/redo/comparison-results.json",
+      "sha256": "6401ceb3412ef9e390129778cacb598cd0081f7979a4f9c23f183d796d1c6506",
+      "written_utc": "2026-11-10T12:51:11.858501+00:00"
+    },
+    "live-trace": {
+      "result": "PASS",
+      "evidence": "docs/reviews/redo/live-trace.json",
+      "sha256": "fa4c16e0807609779a5586edab01afac13ef80cc1624db10b3e0a04e96dc6db9"
+    }
+  },
+  "source_modules": {
+    "game/redesign/gear.js": "18116c3681f32e211a12d8bd22ce3108160929e9bdf246e703200c6e1c8f1013",
+    "game/redesign/art.js": "9b752b40c9d05920dc4ee5c2dfc265fd90b64d77bc9a68e3b62002f155ec1a6b",
+    "game/redesign/assets.js": "0ddb2a6ac7c512acd1318052fb5045637eeb2eaa8df6a206154632b0dd2c54ca",
+    "game/redesign/ui.js": "779e9af20b7b87703abf005cb12b5aeb509a45a3e9a71f60c999a25003f471eb",
+    "game/redesign/effects.js": "7cc373eb962a14dbfda5799ab8e81b26118b376022725b42be8367d4bcae4dc7",
+    "game/redesign/style.css": "cbb1bf7e7d8d1acce7b28364f033f701463506134b85720c5244860e038a0f56"
+  },
+  "limits": "PASS applies to the documented executed cases; partial/unverified acceptance scopes remain in VALIDATION.md. Test snapshots are isolated fixtures, not player saves."
+}
