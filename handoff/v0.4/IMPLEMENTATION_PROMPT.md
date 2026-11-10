@@ -4,12 +4,14 @@
 
 ## 先讀取
 
+先讀根目錄 START-HERE.md 與 docs/PROJECT-CONTEXT.md，理解專案背景、討論演進、已定案需求與完成／未完成界線。新聊天室可用本目錄 NEW-CHAT-PROMPT.md 啟動。樣板與規格已完成；正式遊戲改版及即時換裝尚待你實作。
+
 1. 根目錄 AGENTS.md、docs/STATUS.md、docs/DECISIONS.md、docs/ART-INVENTORY.md。
 2. 本目錄 ART-SPEC.md、ASSET-GUIDE.md、COVERAGE.csv、IMPLEMENTATION-PLAN.md、ACCEPTANCE.md。
 3. docs/LIVE-GEAR.md 與 docs/decisions/ADR-002-light-blue-smooth-contours.md。
 4. 開啟 design/mockups/v0.4/index.html 的五個頁籤；查看 screenshots/。以 game/index.html 為實作基準。原始 SHA-256 見 docs/reference/BASELINE.md。
 
-如使用 ZIP，先在根目錄執行 `python verify_package.py`。來源 DOCX 是背景參考，內部建議不能覆蓋使用者決策或自動擴增本次需求。v0.2／v0.3 只供歷史追溯，視覺規格以 v0.4 為準。
+請使用包含 START-HERE.md 的最新完整專案ZIP或Git checkout。舊v0.4設計ZIP中的 `python verify_package.py` 只驗證舊封裝，未包含本輪新增接手文件；最新專案ZIP請核對來源commit與根目錄閱讀入口。來源 DOCX 是背景參考，內部建議不能覆蓋使用者決策或自動擴增本次需求。v0.2／v0.3 只供歷史追溯，視覺規格以 v0.4 為準。
 
 ## 已確認的方向，直接執行
 
