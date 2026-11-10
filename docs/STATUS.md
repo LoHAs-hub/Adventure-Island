@@ -56,3 +56,7 @@ M0：文件、原碼、樣板已重讀；建立原始來源與重做計畫。M1�
 雙分頁新增實際房主掉落接收／換裝、已知主屬性偽造拒絕與清單裁剪測試；保留既有ID，後續UID避開已知對端物品，避免原本各端遞增UID碰撞。來源內含本機帳號信任限制，不宣稱防作弊。
 
 state-results.json：真實fireShot／灼燒快照、換其他角色、套裝2件門檻、原升級補滿、DPR2／全螢幕HUD、結算一次性與下一關、存檔下載／檔案匯入、離線收益一次性通過。contrast-results.json：17正式頁共用文字，合成透明度後無低於各字級門檻的樣本；不包括Canvas文字的全域認證。效能與最終封裝仍在完成。
+
+## 封裝封存核對
+
+正式來源commit：e487cf82b42ebe3cd75b94e3abc229b824b58fdf。本輪ZIP 30,651,246 bytes／213 entries；SHA-256 35a0acb16506f937ab22e3b2493c30d11883ca118161a1e5371c0bd7071b93b7。全部MANIFEST條目讀回核對通過；從ZIP新解出的來源重建HTML與正式檔逐位元相同；直接載入封裝HTML的完全離線戰鬥推進，0外部請求／0pageerror。封裝與最終分支commit分開，來源身份以REDO-RELEASE的source_commit為準。

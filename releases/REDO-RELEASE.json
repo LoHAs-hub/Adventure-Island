@@ -1,0 +1,21 @@
+{
+  "release": "v0.4-redo",
+  "date": "2026-11-10",
+  "timezone": "Asia/Taipei",
+  "source_commit": "e487cf82b42ebe3cd75b94e3abc229b824b58fdf",
+  "game_sha256": "0c038cc906ccb2ec0fac0f3d65f406963e1af68b0ffb31a2eb7d91ed67c1e5cf",
+  "baseline_sha256": "63a018e13af27da20a7493918ecb3719faba09a1059a36fb6dd0da96529c09be",
+  "validation": "docs/reviews/redo/VALIDATION.md",
+  "archive": "Adventure-Island-v0.4-redo.zip",
+  "archive_sha256": "35a0acb16506f937ab22e3b2493c30d11883ca118161a1e5371c0bd7071b93b7",
+  "archive_bytes": 30651246,
+  "file_count": 213,
+  "manifest_verified": true,
+  "packaged_rebuild_matches": true,
+  "packaged_offline_smoke": {
+    "result": "PASS",
+    "pageerrors": 0,
+    "external_requests": 0,
+    "method": "Exact archived HTML loaded in offline BrowserContext; original battle advances."
+  }
+}
