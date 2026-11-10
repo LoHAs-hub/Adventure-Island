@@ -1,0 +1,12 @@
+{
+  "transport": "BroadcastChannel, two pages, same browser context",
+  "guestEquipment": "PASS: host recomputed and acknowledged",
+  "hostEquipment": "PASS: guest received authoritative source",
+  "staleEpochAndRevision": "PASS: ignored",
+  "disconnect": "PASS: original disconnect state",
+  "errors": [],
+  "unverified": [
+    "Internet WebRTC/STUN transport",
+    "malicious local-save item provenance (original trust boundary)"
+  ]
+}

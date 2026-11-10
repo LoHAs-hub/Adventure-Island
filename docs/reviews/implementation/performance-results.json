@@ -1,0 +1,45 @@
+{
+  "method": "Chromium, fixed seed, 1440x900, backing 1200x675, 37 entities / 50 particles / 80 items, 120 synchronous renders and 12 management rebuilds; microbenchmark, not device-wide FPS guarantee",
+  "results": [
+    {
+      "version": "baseline",
+      "render": {
+        "medianMs": 5.600000000093132,
+        "p95Ms": 7.5,
+        "maxMs": 16.800000000046566
+      },
+      "management": {
+        "medianMs": 12.699999999953434,
+        "p95Ms": 64.19999999995343,
+        "maxMs": 64.19999999995343
+      },
+      "heapBytes": 9718697,
+      "backing": [
+        1200,
+        675
+      ],
+      "entities": 37,
+      "particles": 50
+    },
+    {
+      "version": "current",
+      "render": {
+        "medianMs": 4.399999999906868,
+        "p95Ms": 6.400000000139698,
+        "maxMs": 11.5
+      },
+      "management": {
+        "medianMs": 15.800000000046566,
+        "p95Ms": 20.399999999906868,
+        "maxMs": 20.399999999906868
+      },
+      "heapBytes": 7724666,
+      "backing": [
+        1200,
+        675
+      ],
+      "entities": 37,
+      "particles": 50
+    }
+  ]
+}

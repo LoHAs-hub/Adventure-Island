@@ -1,0 +1,229 @@
+{
+  "panels": [
+    {
+      "requested": "m0",
+      "id": "m17",
+      "text": 274,
+      "overflow": false,
+      "controls": 4
+    },
+    {
+      "requested": "m31",
+      "id": "m31",
+      "text": 52,
+      "overflow": false,
+      "controls": 2
+    },
+    {
+      "requested": "m30",
+      "id": "m30",
+      "text": 114,
+      "overflow": false,
+      "controls": 1
+    },
+    {
+      "requested": "m7",
+      "id": "m7",
+      "text": 317,
+      "overflow": false,
+      "controls": 3
+    },
+    {
+      "requested": "m8",
+      "id": "m8",
+      "text": 414,
+      "overflow": false,
+      "controls": 9
+    },
+    {
+      "requested": "m9",
+      "id": "m9",
+      "text": 413,
+      "overflow": false,
+      "controls": 15
+    },
+    {
+      "requested": "m1",
+      "id": "m1",
+      "text": 230,
+      "overflow": false,
+      "controls": 1
+    },
+    {
+      "requested": "m2",
+      "id": "m2",
+      "text": 1668,
+      "overflow": false,
+      "controls": 1
+    },
+    {
+      "requested": "m17",
+      "id": "m17",
+      "text": 274,
+      "overflow": false,
+      "controls": 4
+    },
+    {
+      "requested": "m18",
+      "id": "m18",
+      "text": 69,
+      "overflow": false,
+      "controls": 9
+    },
+    {
+      "requested": "m19",
+      "id": "m19",
+      "text": 427,
+      "overflow": false,
+      "controls": 13
+    },
+    {
+      "requested": "m20",
+      "id": "m20",
+      "text": 6362,
+      "overflow": false,
+      "controls": 1
+    },
+    {
+      "requested": "m16",
+      "id": "m16",
+      "text": 1017,
+      "overflow": false,
+      "controls": 7
+    },
+    {
+      "requested": "m15",
+      "id": "m15",
+      "text": 226,
+      "overflow": false,
+      "controls": 26
+    },
+    {
+      "requested": "m3",
+      "id": "m3",
+      "text": 19,
+      "overflow": false,
+      "controls": 4
+    },
+    {
+      "requested": "m10",
+      "id": "m10",
+      "text": 135,
+      "overflow": false,
+      "controls": 13
+    },
+    {
+      "requested": "m11",
+      "id": "m11",
+      "text": 232,
+      "overflow": false,
+      "controls": 4
+    },
+    {
+      "requested": "m12",
+      "id": "m12",
+      "text": 638,
+      "overflow": false,
+      "controls": 96
+    },
+    {
+      "requested": "m14",
+      "id": "m14",
+      "text": 323,
+      "overflow": false,
+      "controls": 69
+    },
+    {
+      "requested": "m13",
+      "id": "m13",
+      "text": 302,
+      "overflow": false,
+      "controls": 7
+    },
+    {
+      "requested": "m4",
+      "id": "m4",
+      "text": 1201,
+      "overflow": false,
+      "controls": 34
+    },
+    {
+      "requested": "m21",
+      "id": "m21",
+      "text": 872,
+      "overflow": false,
+      "controls": 10
+    },
+    {
+      "requested": "m23",
+      "id": "m23",
+      "text": 510,
+      "overflow": false,
+      "controls": 2
+    },
+    {
+      "requested": "m22",
+      "id": "m22",
+      "text": 288,
+      "overflow": false,
+      "controls": 1
+    },
+    {
+      "requested": "m5",
+      "id": "m5",
+      "text": 832,
+      "overflow": false,
+      "controls": 6
+    },
+    {
+      "requested": "m6",
+      "id": "m6",
+      "text": 275,
+      "overflow": false,
+      "controls": 7
+    }
+  ],
+  "atlas": {
+    "classes": 5,
+    "enemies": 288,
+    "bodies": [
+      "man",
+      "slime",
+      "shroom",
+      "bat",
+      "crab",
+      "golem",
+      "wisp",
+      "stump",
+      "boar",
+      "snail",
+      "crystal",
+      "chest",
+      "dragon"
+    ],
+    "pets": [
+      "sun",
+      "moon",
+      "star",
+      "phoenix",
+      "tiger",
+      "crystal",
+      "chick",
+      "fox",
+      "dragon"
+    ],
+    "beasts": [
+      "qilin",
+      "zhuque",
+      "xuanwu",
+      "jinlong",
+      "qinglong"
+    ],
+    "themes": 10
+  },
+  "errors": [],
+  "notes": [
+    "All original joint/pose functions retained; styles do not alter KF/ANK or damage frames",
+    "Atlas covers data definitions and visual IDs; does not prove every animation frame in actual combat"
+  ]
+}

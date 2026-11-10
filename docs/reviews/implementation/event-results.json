@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "E01 10 draws, skip/exit awards once",
+    "E01 100 draws, skip/exit awards once",
+    "E01/E02 reduced motion immediate result, exit remains usable",
+    "G04 actual pointer double-click equip",
+    "G04 equipped enhancement commits actor stats",
+    "I01 manager keyboard focus does not attack",
+    "V02 modal restores invoking focus",
+    "C02 all three quality modes render live battle"
+  ],
+  "errors": [],
+  "unverified": [
+    "Every attack frame and hazard collision combination",
+    "OS background suspension across devices"
+  ]
+}
