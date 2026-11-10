@@ -1,3 +1,5 @@
+> 最新：使用者拒絕上一輪d1942ae，現在從新上傳原始ZIP重做。舊完成／驗證敘述屬前次未通過嘗試；本輪以docs/STATUS及reviews/redo為準。
+
 # 冒險島後續協作入口
 
 接續既有遊戲，不重做新遊戲。先讀 START-HERE → docs/PROJECT-CONTEXT → AGENTS → STATUS／DECISIONS → docs/reviews/implementation/VALIDATION.md、ASSET-MAP.md及COVERAGE.csv。

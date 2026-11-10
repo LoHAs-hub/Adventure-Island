@@ -1,3 +1,5 @@
+> 本輪重做：d1942ae未通過使用者驗收。從game/source/baseline.html重新實作，最新證據在docs/reviews/redo，不繼承上一輪PASS。
+
 # 協作入口
 
 先讀 START-HERE.md、docs/PROJECT-CONTEXT.md，再讀 README.md、docs/STATUS.md、docs/DECISIONS.md、docs/ART-INVENTORY.md，最後看相關程式。當前交接版本為 handoff/v0.4；舊版僅作歷史追溯。
