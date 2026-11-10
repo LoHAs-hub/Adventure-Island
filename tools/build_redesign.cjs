@@ -17,8 +17,14 @@ patch('if(e.code==="Escape"&&G&&!G.over){','if(RUI.routeKey(e))return;\n  if(e.c
 // Single equipment / mutation paths remain the original, with fixed batch IDs.
 patch('GR.dc=Date.now();renderGrowth();return}GR.dc=0;let d=0,g=0,n=0;const dm=SVD.dmax??3;','GR.dc=Date.now();GR.batchIds=SVD.inv.filter(x=>!x.lk&&x.anc===undefined&&x.ri<=(SVD.dmax??3)).map(x=>x.id);renderGrowth();return}GR.dc=0;let d=0,g=0,n=0;const dm=SVD.dmax??3,confirmed=new Set(GR.batchIds||[]);GR.batchIds=null;');
 patch('if(x.lk||x.anc!==undefined||x.ri>dm)return true;','if(!confirmed.has(x.id)||x.lk||x.anc!==undefined||x.ri>dm)return true;');
+patch('const it=p.eq[s.dataset.k];SVD.inv.push(it);delete p.eq[s.dataset.k];GR.sel=null;', 'const it=p.eq[s.dataset.k];if(!LiveGear.unequip(GR.ci,s.dataset.k))return;GR.sel=null;');
+patch('SVD.inv.splice(SVD.inv.indexOf(it),1);if(p.eq[it.sl])SVD.inv.push(p.eq[it.sl]);p.eq[it.sl]=it;GR.sel={src:"eq",k:it.sl};', 'if(!LiveGear.equip(GR.ci,it.id))return;GR.sel={src:"eq",k:it.sl};');
+patch('const k=SVD.inv.indexOf(it);SVD.inv.splice(k,1);if(p.eq[it.sl])SVD.inv.push(p.eq[it.sl]);p.eq[it.sl]=it;GR.sel={src:"eq",k:it.sl};', 'if(!LiveGear.equip(GR.ci,it.id))return;GR.sel={src:"eq",k:it.sl};');
+patch('SVD.inv.push(it);delete p.eq[sel.k];GR.sel=null', 'if(!LiveGear.unequip(GR.ci,sel.k))return;GR.sel=null');
+patch('if(x.ri<=mx&&x.en===0){', 'if(!x.lk&&x.ri<=mx&&x.en===0){');
+patch('if(x.ri<=1&&x.en===0){', 'if(!x.lk&&x.ri<=1&&x.en===0){');
 // Wire dedicated network update packets, preserving all other message branches.
-patch('case"full":status(', 'case"gearV4":LiveGear.receive(d);break;\n    case"gearAckV4":LiveGear.ack(d);break;\n    case"actorV4":LiveGear.actor(d);break;\n    case"full":status(');
+patch('case"full":status(', 'case"gearV4":LiveGear.receive(d);break;\n    case"ledgerV4":LiveGear.reconcile(d);break;\n    case"gearAckV4":LiveGear.ack(d);break;\n    case"actorV4":LiveGear.actor(d);break;\n    case"full":status(');
 patch('NET.ok=true;NET.rem=d;if(G&&!G.over&&G.net===1){const f=G.F.find(f=>f.net);if(f&&d.st&&d.st.ci===f.ci)refreshP(f,d.st)}','NET.ok=true;NET.rem=d;LiveGear.register(d);');
 patch('netSend("go",{cfg,gid:Date.now()});startGame(cfg);','cfg.gearEpoch=Date.now()+"-"+Math.random().toString(36).slice(2);LiveGear.reset(cfg.gearEpoch);netSend("go",{cfg,gid:Date.now()});startGame(cfg);');
 patch('const cfg=d.cfg;resetI(IN);','const cfg=d.cfg;LiveGear.reset(cfg.gearEpoch);resetI(IN);');
@@ -27,6 +33,8 @@ patch('f.dead=true;f.lives=0;f.hp=0;f.st="dead"','f.dead=true;f.lives=0;f.hp=0;f
 patch('function stepP(f){','function stepP(f){if(f.disconnected)return;');
 // Refuse old hello updates during a live match: equipment has its own protocol.
 patch('case"hello":if(NET.role!=="host")return;','case"hello":if(NET.role!=="host")return;if(G&&!G.over){if(!NET.ok)netSend("full",0);return}');
+patch('const g0=SVD.gold,r=gachaOne(ro);r.k=GK;', 'const receiptBefore=RUI.receiptSequence||0,g0=SVD.gold,r=gachaOne(ro);if((RUI.receiptSequence||0)!==receiptBefore)r.disposition=RUI.lastLoot.result;r.k=GK;');
+patch('job,wr:vis.wr||0','branch:br,job,wr:vis.wr||0');
 // Reuse exact original warning paths for a border pass, without duplicate labels.
 patch('for(const p of G.fx)dFx(p);\n  X.restore();','for(const p of G.fx)dFx(p);\n  Art.warningTop();\n  X.restore();');
 // Initialize modules before the original load/start sequence.

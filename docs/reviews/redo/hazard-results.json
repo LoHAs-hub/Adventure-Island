@@ -1,0 +1,259 @@
+{
+  "collision": {
+    "points": [
+      {
+        "bk": "slam",
+        "x": 400,
+        "z": 60,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "slam",
+        "x": 501,
+        "z": 60,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "slam",
+        "x": 503,
+        "z": 60,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      },
+      {
+        "bk": "slam",
+        "x": 400,
+        "z": 105,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "slam",
+        "x": 400,
+        "z": 107,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      },
+      {
+        "bk": "charge",
+        "x": 369,
+        "z": 60,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      },
+      {
+        "bk": "charge",
+        "x": 380,
+        "z": 60,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "charge",
+        "x": 700,
+        "z": 60,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "charge",
+        "x": 718,
+        "z": 89,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "charge",
+        "x": 720,
+        "z": 60,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      },
+      {
+        "bk": "charge",
+        "x": 500,
+        "z": 91,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      },
+      {
+        "bk": "rain:42:400",
+        "x": 523.9205640845466,
+        "z": 100.6130132938415,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "rain:42:400",
+        "x": 523.9205640845466,
+        "z": 123.6130132938415,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "rain:42:400",
+        "x": 523.9205640845466,
+        "z": 125.6130132938415,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "rain:42:400",
+        "x": 100,
+        "z": 120,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      },
+      {
+        "bk": "rain:42:400",
+        "x": 800,
+        "z": 30,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      },
+      {
+        "bk": "laser:60",
+        "x": 400,
+        "z": 39,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      },
+      {
+        "bk": "laser:60",
+        "x": 400,
+        "z": 41,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "laser:60",
+        "x": 400,
+        "z": 60,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "laser:60",
+        "x": 400,
+        "z": 79,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "laser:60",
+        "x": 400,
+        "z": 81,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      },
+      {
+        "bk": "nova",
+        "x": 450,
+        "z": 60,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      },
+      {
+        "bk": "nova",
+        "x": 509,
+        "z": 60,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      },
+      {
+        "bk": "nova",
+        "x": 511,
+        "z": 60,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "nova",
+        "x": 700,
+        "z": 60,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "nova",
+        "x": 739,
+        "z": 60,
+        "predicted": true,
+        "hit": true,
+        "match": true
+      },
+      {
+        "bk": "nova",
+        "x": 741,
+        "z": 60,
+        "predicted": false,
+        "hit": false,
+        "match": true
+      }
+    ],
+    "fanProjectiles": [
+      {
+        "vx": 5.5,
+        "vz": -2.2,
+        "r": 12
+      },
+      {
+        "vx": 5.5,
+        "vz": -1.1,
+        "r": 12
+      },
+      {
+        "vx": 5.5,
+        "vz": 0,
+        "r": 12
+      },
+      {
+        "vx": 5.5,
+        "vz": 1.1,
+        "r": 12
+      },
+      {
+        "vx": 5.5,
+        "vz": 2.2,
+        "r": 12
+      }
+    ]
+  },
+  "notes": [
+    "Rain visual radius corrected from original ry=22 to ry=24 to match dz*2 judgment; no damage logic changed",
+    "Charge warning now covers original full sweep (-30..9*29+46+12*scale), depth ±30; original hitBox unchanged",
+    "Fan keeps original five projectile paths; direction marker does not invent a safe cone"
+  ],
+  "quality": [
+    "low",
+    "high"
+  ],
+  "errors": []
+}

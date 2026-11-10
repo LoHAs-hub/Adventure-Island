@@ -1,0 +1,63 @@
+{
+  "characters": {
+    "classes": 5,
+    "branches": 12,
+    "faces": 8,
+    "hair": 12,
+    "skin": 6,
+    "outfits": 14,
+    "uniqueBranchImages": 12
+  },
+  "enemies": {
+    "definitions": 288,
+    "enemyDefinitions": 283,
+    "bodies": [
+      "man",
+      "slime",
+      "shroom",
+      "bat",
+      "crab",
+      "golem",
+      "wisp",
+      "stump",
+      "boar",
+      "snail",
+      "crystal",
+      "chest",
+      "dragon"
+    ]
+  },
+  "companions": {
+    "pets": [
+      "sun",
+      "moon",
+      "star",
+      "phoenix",
+      "tiger",
+      "crystal",
+      "chick",
+      "fox",
+      "dragon"
+    ],
+    "beasts": [
+      "qilin",
+      "zhuque",
+      "xuanwu",
+      "jinlong",
+      "qinglong"
+    ]
+  },
+  "themes": 10,
+  "animationStates": [
+    "idle",
+    "walk",
+    "jump",
+    "atk",
+    "sp",
+    "ult",
+    "hurt",
+    "dead"
+  ],
+  "errors": [],
+  "scope": "Production drawing entry points and original source data; atlas is separate from gameplay verification."
+}

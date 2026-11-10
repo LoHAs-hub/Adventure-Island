@@ -1,0 +1,188 @@
+{
+  "panels": [
+    {
+      "requested": "m0",
+      "view": "home",
+      "panel": null,
+      "text": 354,
+      "controls": 0
+    },
+    {
+      "requested": "m31",
+      "view": "systems",
+      "panel": "m31",
+      "text": 52,
+      "controls": 2
+    },
+    {
+      "requested": "m30",
+      "view": "systems",
+      "panel": "m30",
+      "text": 114,
+      "controls": 1
+    },
+    {
+      "requested": "m7",
+      "view": "systems",
+      "panel": "m7",
+      "text": 314,
+      "controls": 3
+    },
+    {
+      "requested": "m8",
+      "view": "systems",
+      "panel": "m8",
+      "text": 414,
+      "controls": 9
+    },
+    {
+      "requested": "m9",
+      "view": "systems",
+      "panel": "m9",
+      "text": 401,
+      "controls": 15
+    },
+    {
+      "requested": "m1",
+      "view": "systems",
+      "panel": "m1",
+      "text": 212,
+      "controls": 1
+    },
+    {
+      "requested": "m2",
+      "view": "systems",
+      "panel": "m2",
+      "text": 1668,
+      "controls": 1
+    },
+    {
+      "requested": "m17",
+      "view": "home",
+      "panel": null,
+      "text": 354,
+      "controls": 0
+    },
+    {
+      "requested": "m18",
+      "view": "systems",
+      "panel": "m18",
+      "text": 69,
+      "controls": 9
+    },
+    {
+      "requested": "m19",
+      "view": "systems",
+      "panel": "m19",
+      "text": 425,
+      "controls": 13
+    },
+    {
+      "requested": "m20",
+      "view": "systems",
+      "panel": "m20",
+      "text": 6362,
+      "controls": 1
+    },
+    {
+      "requested": "m16",
+      "view": "systems",
+      "panel": "m16",
+      "text": 1017,
+      "controls": 7
+    },
+    {
+      "requested": "m15",
+      "view": "systems",
+      "panel": "m15",
+      "text": 226,
+      "controls": 26
+    },
+    {
+      "requested": "m3",
+      "view": "systems",
+      "panel": "m3",
+      "text": 19,
+      "controls": 4
+    },
+    {
+      "requested": "m10",
+      "view": "systems",
+      "panel": "m10",
+      "text": 132,
+      "controls": 13
+    },
+    {
+      "requested": "m11",
+      "view": "systems",
+      "panel": "m11",
+      "text": 235,
+      "controls": 4
+    },
+    {
+      "requested": "m12",
+      "view": "systems",
+      "panel": "m12",
+      "text": 623,
+      "controls": 96
+    },
+    {
+      "requested": "m14",
+      "view": "systems",
+      "panel": "m14",
+      "text": 323,
+      "controls": 69
+    },
+    {
+      "requested": "m13",
+      "view": "systems",
+      "panel": "m13",
+      "text": 302,
+      "controls": 7
+    },
+    {
+      "requested": "m4",
+      "view": "systems",
+      "panel": "m4",
+      "text": 1166,
+      "controls": 32
+    },
+    {
+      "requested": "m21",
+      "view": "systems",
+      "panel": "m21",
+      "text": 872,
+      "controls": 10
+    },
+    {
+      "requested": "m23",
+      "view": "systems",
+      "panel": "m23",
+      "text": 513,
+      "controls": 2
+    },
+    {
+      "requested": "m22",
+      "view": "systems",
+      "panel": "m22",
+      "text": 273,
+      "controls": 1
+    },
+    {
+      "requested": "m5",
+      "view": "systems",
+      "panel": "m5",
+      "text": 817,
+      "controls": 6
+    },
+    {
+      "requested": "m6",
+      "view": "systems",
+      "panel": "m6",
+      "text": 275,
+      "controls": 7
+    }
+  ],
+  "errors": [],
+  "scope": "Formal original game panels through original functions; m0/m17 route to the new home, m18 is retained legacy navigation."
+}

@@ -1,0 +1,40 @@
+{
+  "baselineSave": "equal character/item/lock IDs",
+  "migrations": [
+    {
+      "version": 3,
+      "equalToOriginal": true
+    },
+    {
+      "version": 4,
+      "equalToOriginal": true
+    }
+  ],
+  "protectedFunctions": {
+    "statsOf": "e810e7999fc783c4afd1167163259625568b2b8c3b50b154d37bbe4ffaef2a2d",
+    "cpOfS": "a5d10fbb4c8d491d5d8ac54cb3d28be9b2b2a6249ae29c5c7c44f8b3c41611c8",
+    "genItem": "250c2d92ad1d98837d499b2760e395829100d9f4c6f7cc251ae43c340959a03b",
+    "genAnc": "c15f349ea4cfff7a6f177664f46f75fc4a25758062d2cf6d9d78f229add60eb9",
+    "rollP": "1807d02dd51e9bd566fd8adb1983946217c30e831503d8e18fe1e6524714783f",
+    "startAtk": "51f44bd6994185816bbcdd33409c7fb5215ce37c2c079a5cf4b0d305f0656e88",
+    "startSp": "42861b82a0814f6a4ee7163d5a047d0d7e59f0931527da5ff98ad57dfc3d1940",
+    "startUlt": "c643e1e8085d767ae69b96ba56a91b89e51b03a3713118890cd0c4703c80a430",
+    "stepE": "034785c225b75e2925d4af2f839e3412309a3f5effca0ae3578bf2699b34115f",
+    "addXp": "4c9e498a2563f36e9f0e090dd962fce5d6d168515619f1d66d7a59a92dc3ac86",
+    "refreshP": "50a7204e1fde00d9ea0e425eee5f6d686a4cbcc9b27d002159f1308dcc8055bd",
+    "gachaOne": "4b20766232042a416d34d42ab5406f2c09de82bb0ffe1e267c5fbf244af31629",
+    "loadSave": "7a489e738bdba960badfbddba3a2555a7710bdda1fec34dc204427cb733e717d",
+    "fixSave": "0ff4469fe4e5852a8838e5641f7cffedccdfb683abd713cab34659c295db4320",
+    "migrate4": "eb1e965bb84e9cd6d10e9f82329c92b4028fff59a2051df8543bb3d4854e78bc",
+    "migrate5": "a9f735617e56d06bae508527bd4c381c90627f329edd2baf5c2c6a94baf61e02",
+    "poseOf": "f6bf0a0920a5941092b4bf7b6e6f5a1afed7cd4126ffde1a913bec2cf71f3f58",
+    "animate": "395141cf5cbbd03760e0de391203b015c9d55df329ab12cceb2d9bc4c891d647",
+    "updItems": "d06ade9e8b15478a106157ec8a984f144fb3e9218e4212b16a8c407b8759806b",
+    "collect": "af8c8c1ab5d07b6d5a9567aa616182518c0a41c5baca81f7bf204b3a3915da3f"
+  },
+  "dataTablesSha256": "4f817e69cbe466640bf23408995f0a309af9ca3708fc5fe6b18efe193f4d3e57",
+  "gachaEconomy": "identical after removing only presentation receipt annotation",
+  "offline": "exact HTML runs with browser offline and zero external requests",
+  "fileURL": "managed Chrome file:// policy blocks direct opening; not claimed tested",
+  "errors": []
+}

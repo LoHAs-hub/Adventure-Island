@@ -1,0 +1,15 @@
+{
+  "transport": "BroadcastChannel two real pages / original host simulation",
+  "checks": [
+    "guest equip → host formula recompute → ACK → guest actor matches",
+    "host equip → guest source stats update",
+    "stale epoch/revision ignored",
+    "unknown item rejected",
+    "disconnect remains dead, simulation does not revive missing guest"
+  ],
+  "errors": [],
+  "unverified": [
+    "Internet WebRTC/STUN traversal",
+    "malicious pre-room local save and local upgrade randomness (original trust boundary)"
+  ]
+}

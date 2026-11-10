@@ -21,3 +21,5 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .comparison-table{font-size:12px}.comparison-table th,.comparison-table td{padding:5px 2px}.extra-comparison{font-size:10px;margin:5px 0;padding:4px 0}.extra-comparison summary{cursor:pointer;color:var(--muted);font-weight:700}.extra-comparison>div{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--line);gap:8px}
 @media(min-width:1000px) and (max-height:800px){.comparison-table{font-size:11px}.comparison-table th,.comparison-table td{padding:3px 2px}}
+.item-badges{position:absolute;left:3px;top:3px;display:flex;gap:2px;align-items:center}.item-badges .item-lock,.item-new{position:static;font:800 8px/1.2 monospace;background:var(--ink);color:var(--paper);padding:1px 3px;border-radius:2px}.item-up{top:auto;bottom:12px;right:4px;font-size:13px}
+.character-monogram{overflow:hidden;background:#DCE9F1;border-color:#F3F6F8}.character-monogram canvas{display:block;width:100%;height:100%;object-fit:contain}.rarity-badge{color:#141B20;font-size:10px}

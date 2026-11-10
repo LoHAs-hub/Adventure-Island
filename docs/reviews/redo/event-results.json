@@ -1,0 +1,69 @@
+{
+  "checks": [
+    "E01: real 10-draw awards, skip and exit do not re-award",
+    "E01: real 100-draw awards, skip and exit do not re-award",
+    "E01/E02: reduced motion immediate result and real draw-again",
+    "E01: insufficient currency does not award or open reveal",
+    "G04: original enhancement, star force, cube/potential and flame routes match actor",
+    "G03: max clamp, no free healing and no resurrection",
+    "B03: full locked inventory preserves existing IDs and truthful disposition"
+  ],
+  "upgrades": [
+    {
+      "action": "en",
+      "used": true,
+      "consistent": true,
+      "hp": 30,
+      "cd": 180,
+      "rage": 48
+    },
+    {
+      "action": "sf",
+      "used": true,
+      "consistent": true,
+      "hp": 30,
+      "cd": 180,
+      "rage": 48
+    },
+    {
+      "action": "cube",
+      "used": true,
+      "consistent": true,
+      "hp": 30,
+      "cd": 180,
+      "rage": 48
+    },
+    {
+      "action": "cube",
+      "used": true,
+      "consistent": true,
+      "hp": 30,
+      "cd": 180,
+      "rage": 48
+    },
+    {
+      "action": "potential preview",
+      "consistent": true,
+      "unchanged": true
+    },
+    {
+      "action": "papply",
+      "consistent": true
+    },
+    {
+      "action": "flame/apply",
+      "consistent": true
+    }
+  ],
+  "limits": {
+    "clamp": true,
+    "noHeal": true,
+    "noRevive": true
+  },
+  "capacity": {
+    "result": "滿包，已出售",
+    "protected": true,
+    "sold": true
+  },
+  "errors": []
+}
