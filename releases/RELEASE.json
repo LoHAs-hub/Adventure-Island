@@ -1,0 +1,11 @@
+{
+  "design_version": "v0.4",
+  "date": "2026-11-10",
+  "timezone": "Asia/Taipei",
+  "source_commit": "ca8fc8db1713199e430e26ab311b24e7de752848",
+  "game_sha256": "56cb4b8b744eeb0fe910cfca9d07c150b7256ebb7045cb3852efd68e4cde70ec",
+  "archive": "Adventure-Island-v0.4-playable.zip",
+  "archive_sha256": "8b419ab9a483704e4d59d8f5c9b0d5fa6f217b8bc01c56d10b6acaf2fc9941cb",
+  "archive_bytes": 23042436,
+  "manifest_verified": true
+}
