@@ -245,6 +245,37 @@ input.code{background:#120e06;border:1px solid rgba(240,196,60,.5);border-radius
 #toastBox{position:absolute;left:50%;top:12%;transform:translateX(-50%);z-index:70;display:flex;flex-direction:column;gap:6px;align-items:center;pointer-events:none}
 #toastBox div{padding:8px 18px;border-radius:999px;background:var(--gold);color:#241800;font-weight:800;font-size:14px;box-shadow:0 8px 30px rgba(240,196,60,.5);white-space:nowrap;animation:ri .3s}
 @media (max-width:640px){.gtop{flex-direction:column}.chs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* v0.4 正式共用介面；戰鬥邏輯座標維持 800×450 */
+:root{--g1:#202A32;--g2:#24658B;--g3:#526775;--gold:#B9DFF6;--ink:#202A32;--sub:#526775;color-scheme:light}
+body{background:#DFE8ED;color:#202A32;font-family:"Noto Sans CJK TC","Microsoft JhengHei","PingFang TC",sans-serif;padding:18px;gap:16px;font-variant-numeric:tabular-nums}
+body::before{inset:0;background:radial-gradient(#202a3218 .7px,transparent .7px);background-size:7px 7px;animation:none}
+#wrap{width:min(1500px,100%)}#stage{border:3px solid #202A32;border-radius:16px;background:#D3E6EE;box-shadow:4px 4px 0 #202A32;aspect-ratio:16/9}
+#ui{padding:48px 0 64px;background:#F3F6F8F5;backdrop-filter:none}
+.panel{padding:16px 22px;font-size:14px;color:#202A32;text-align:center;scrollbar-gutter:stable}
+h1{background:none;color:#202A32;animation:none;filter:none;font-family:inherit;letter-spacing:.02em}h2{font-weight:900;color:#202A32;font-size:24px}.sub{font-size:13px;line-height:1.6;color:#526775}
+button,input,select{font:inherit}button{min-height:36px;cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #24658B;outline-offset:3px}
+.btnc button,.lnk,.mini,.btns button,.btns2 button,.seg button,.opt button{border:2px solid #202A32;border-radius:8px;background:#FBFCFD;color:#202A32;font-size:14px;font-weight:800;box-shadow:0 2px 0 #202A32;padding:8px 12px;transition:background .12s,transform .1s}
+.btnc button.hl,.mini.on,.seg button.on,.opt button.on,.btns .pri{background:#B9DFF6;color:#202A32;border-color:#202A32}
+.btnc button:hover,.lnk:hover,.mini:hover:not(:disabled),.seg button:hover,.opt button:hover,.btns button:hover{background:#9DCEEC;transform:translateY(-1px)}button:active:not(:disabled){transform:translateY(2px);box-shadow:none}button:disabled{opacity:.5;cursor:not-allowed;box-shadow:none}
+.seg{background:#E2EBF0;border:2px solid #202A32;border-radius:10px;gap:4px;padding:4px}.seg button{box-shadow:none;border-color:transparent;border-radius:6px}.seg button.on{border-color:#202A32}
+.info,.row,.cc,.artc,.gst span,.eqs,.tile,.gtop,#ginf,.cpa,.pslot,.sgd{background:#FBFCFD;color:#202A32;border:2px solid #202A32;border-radius:10px;box-shadow:none}
+.row{padding:10px;min-height:52px}.row.cur,.cc.sel,.cc.on{background:#DCEEF9;border-color:#202A32;box-shadow:inset 0 0 0 2px #B9DFF6}.row .nm b,.cc b,.gnm,.gjb,.gst b,.gold,.gds,.gsp,.gcp{color:#202A32}.row small,.cc small,.info small,.gxp{color:#526775;font-size:12px;line-height:1.5}
+.panel [style*="color:"]{color:inherit!important}.panel [style*="color:#6ef08f"],.panel .up,.panel .up1,.panel .nx{color:#245840!important}.panel [style*="color:#ff8a8a"],.panel [style*="color:#ff6b6b"],.panel .dn,.panel .dn1{color:#8C303A!important}
+.info{padding:12px;line-height:1.6}.xpb{background:#CFD9DF;border:1px solid #202A32}.xpb i{background:#24658B}.gst{gap:6px}.gst span{padding:6px 8px;font-size:13px}.gh{gap:8px}.cpa summary{color:#202A32;padding:8px}.sovt{background:#FBFCFD;color:#202A32}.sovt th,.sovt td{border-color:#C2CED5}.sovt .tt{color:#245840}
+#resbar{background:#202A32;color:#F3F6F8;padding:5px 10px;border-radius:0;top:0;left:0;right:0;gap:6px}#resbar span{background:#202A32;border:0;color:#F3F6F8;font-size:13px}#qbar{background:#202A32;border:2px solid #202A32;border-radius:10px;box-shadow:2px 2px 0 #202A32}#qbar button{color:#F3F6F8;min-width:50px}#qbar button.on{background:#B9DFF6;color:#202A32}
+#mt,#mu,#fsb{background:#202A32;color:#F3F6F8;border:1px solid #F3F6F8;border-radius:8px}#toastBox{z-index:70}.toast{background:#202A32!important;color:#F3F6F8!important;border:2px solid #B9DFF6!important;border-radius:10px!important;font-size:14px!important}
+#ov{background:#202A3299}#card{background:#F3F6F8;color:#202A32;border:3px solid #202A32;border-radius:16px;box-shadow:5px 5px 0 #202A32;max-height:90vh;overflow:auto}#card h2,#gs b,#rec{color:#202A32}#msub,#gs small{color:#526775}#cmpTip,#rsTip,.qtip{background:#F3F6F8;color:#202A32;border:2px solid #202A32;border-radius:10px;box-shadow:3px 3px 0 #202A32;font-size:13px;z-index:100}#cmpTip .up{color:#245840}#cmpTip .dn{color:#8C303A}
+#ginf{max-width:1100px;padding:12px}#gtab{border-radius:8px}#gbody{max-width:1100px;margin:auto}.gtop{display:flex;gap:12px;background:transparent;border:0;align-items:flex-start}.eqgrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;flex:0 0 38%}.eqs{min-width:0;min-height:64px;font-size:12px;overflow-wrap:anywhere;border-bottom:5px solid var(--rc,#C2CED5)!important;color:#202A32!important}.eqs.sel,.tile.sel{outline:3px solid #24658B;outline-offset:1px;background:#DCEEF9}.tile{border:2px solid #202A32!important;border-bottom:5px solid var(--rc,#C9CED6)!important;background:#F3F6F8!important;aspect-ratio:1;min-width:0}.tile .lvv,.tile .en{background:#202A32;color:#F3F6F8}.inv{grid-template-columns:repeat(8,minmax(0,1fr));gap:7px;max-height:280px}.invbar{display:flex;flex-wrap:wrap;gap:8px;color:#526775;font-size:13px}.invbar>span{max-width:100%}.invf{display:flex;justify-content:flex-start}.invf button{font-size:12px;padding:6px}.dsec{border-color:#C2CED5}.dhd .t{color:#202A32!important;font-size:18px}.dhd{align-items:flex-start}.dsec small{font-size:12px}.dbt button{white-space:normal}.cmp{background:#E1EFE8;border-left:4px solid #245840;padding:8px}.cmp.dn1{background:#F5D2D6;border-color:#8C303A}.dbt{gap:6px}.dsec .dsb{min-width:0}.btns2{position:sticky;bottom:0;background:#F3F6F8;padding:8px 0;z-index:2}.btns2 button{min-height:42px}#idet{min-width:0;flex:1}.compare-table{width:100%;border-collapse:collapse;font-size:12px;margin:8px 0}.compare-table th,.compare-table td{padding:6px 3px;border-bottom:1px solid #C2CED5;text-align:right}.compare-table th:first-child,.compare-table td:first-child{text-align:left}.rarity-label{display:inline-block;background:#202A32;color:#F3F6F8;padding:3px 7px;border-left:6px solid var(--rc);border-radius:4px;font-size:12px}
+#battleHead{display:none}#battleHead h1{font-size:28px}#battleHead small{color:#B9DFF6}.battle-live #battleHead{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#202A32;color:#F3F6F8;border-radius:12px;padding:12px 18px;grid-column:1/-1}.battle-live #battleHead h1{color:#B9DFF6}.battle-live #wrap{display:grid;grid-template-columns:minmax(0,58fr) minmax(0,42fr);gap:18px;align-items:start}.battle-live #stage{grid-column:1;grid-row:2}.battle-live #tc{grid-column:1}.battle-live #liveManager{grid-column:2;grid-row:2/5;border:3px solid #202A32;border-radius:12px;background:#F3F6F8;box-shadow:4px 4px 0 #202A32;max-height:calc(100dvh - 140px);min-height:420px;overflow:auto;scrollbar-gutter:stable}.battle-live #liveManager .panel{padding:14px 12px;max-height:none;overflow:visible}.battle-live #m4 h2{background:#B9DFF6;padding:12px;margin:-14px -12px 12px;border-bottom:3px solid #202A32;font-size:24px;text-align:left}.battle-live #gch{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.battle-live #gch .cc{font-size:12px;padding:4px}.battle-live #gch canvas{width:42px}.battle-live #gtool{display:none}.battle-live #ginf{border:0;padding:4px;background:transparent;text-align:left}.battle-live .gh{font-size:13px}.battle-live .gnm{font-size:17px}.battle-live .gact{display:none}.battle-live .gst{grid-template-columns:repeat(3,minmax(0,1fr));margin:8px 0}.battle-live .gst span{font-size:12px;padding:5px}.battle-live #gtab{display:flex;flex-wrap:wrap;position:sticky;top:0;z-index:4;background:#202A32}.battle-live #gtab button{color:#F3F6F8;flex:1;padding:6px;font-size:12px;white-space:nowrap}.battle-live #gtab button.on{background:#B9DFF6;color:#202A32}.battle-live .gtop{display:flex;flex-direction:column}.battle-live .eqgrid{width:100%;grid-template-columns:repeat(6,minmax(0,1fr));flex:auto}.battle-live .eqs{font-size:11px;padding:5px 2px;min-height:56px}.battle-live #idet{width:100%;padding:8px;border:2px solid #202A32;border-radius:10px;background:#FBFCFD}.battle-live .inv{grid-template-columns:repeat(6,minmax(0,1fr));max-height:240px}.battle-live .dcol{display:block}.battle-live .dbt{flex-direction:row;flex-wrap:wrap}.battle-live .dsec{display:block}.battle-live #gbk{width:100%}.battle-live #lootPanel{grid-column:1;grid-row:3;border:3px solid #202A32;background:#FBFCFD;border-radius:12px;overflow:hidden}.battle-live #lootPanel h3{background:#DCE7ED;border-bottom:2px solid #202A32;margin:0;padding:10px 14px;font-size:16px}.battle-live #lootList{max-height:180px;overflow:auto}.loot-row{display:flex;width:100%;gap:10px;align-items:center;text-align:left;background:#FBFCFD;border:0;border-bottom:1px solid #C2CED5;padding:10px 12px;color:#202A32;font-size:13px}.loot-row b{flex:1}.loot-row small{color:#526775}.loot-row.important{background:#FFF1D5;border-left:6px solid var(--rc)}#liveStatus{padding:8px 14px;background:#202A32;color:#F3F6F8;font-size:13px}#liveStatus strong{color:#B9DFF6}.battle-live.manager-closed #wrap{grid-template-columns:1fr}.battle-live.manager-closed #liveManager{display:none}.battle-live.manager-closed #stage{max-width:1100px;justify-self:center;width:100%}
+#title{background:#202A32}#title .tl1{background:none;color:#B9DFF6;-webkit-text-fill-color:#B9DFF6;filter:none;text-shadow:4px 4px 0 #101820;font-family:inherit}#title .tl2,#title .tstart,#title .tfoot{color:#F3F6F8;text-shadow:none}#title .tstart{background:#B9DFF6;color:#202A32;padding:14px 24px;border:3px solid #202A32;border-radius:10px;animation:none}
+@media(max-width:1000px){body{padding:10px}.battle-live #wrap{grid-template-columns:1fr}.battle-live #liveManager{grid-column:1;grid-row:4;max-height:75vh}.battle-live #lootPanel{grid-row:3}.battle-live #battleHead{flex-wrap:wrap}.battle-live .eqgrid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media(max-width:600px){.panel{padding:10px}.gtop{flex-direction:column}.eqgrid{width:100%;flex:auto}.inv{grid-template-columns:repeat(5,minmax(0,1fr))}.battle-live #battleHead h1{font-size:22px}.battle-live #liveManager{max-height:none}.chs{grid-template-columns:repeat(2,minmax(0,1fr))}.btnc.three{grid-template-columns:repeat(2,minmax(0,1fr))}.salon{flex-wrap:wrap}.rows.sk2{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}
+
+
+.battle-live #gtab button{background:#202A32;border-color:#526775}.battle-live #gtab button.on{background:#B9DFF6}.battle-live #ginf .gst,.battle-live #ginf .cpa{display:none}.battle-live #m4.stats-view #ginf .gst{display:grid}.battle-live #m4.stats-view #ginf .cpa{display:block}.battle-live .inv{margin:8px 0 14px;max-height:210px}.battle-live #gch{margin-bottom:8px}.battle-live .invbar>span{display:flex;flex-wrap:wrap;gap:5px}.battle-live .invbar button{font-size:12px;padding:6px 8px}.battle-live #gbody .invf{max-height:90px;overflow:auto}.battle-live #gbk{position:sticky;bottom:0;z-index:5;background:#B9DFF6}
+#stage{aspect-ratio:auto}#cv{height:auto;aspect-ratio:16/9}
 </style>
 </head>
 <body>
@@ -367,7 +398,7 @@ const hexMix=(a,b,t)=>{if(a[0]!=="#")return a;const A=h2r(a),B=h2r(b);return r2h
 let GQ=2,GQM="auto";const GQK={h:2,m:1,l:0},GQN=["低","中","高"],PF=[.35,.65,1],FXCAP=[180,360,620];
 function fitCanvas(){const w=cv.clientWidth||VW,need=(window.devicePixelRatio||1)*w/VW;DPR=GQ>=2?cl(need,1.5,3):GQ===1?cl(need*.8,1,2):cl(need*.6,1,1.4);DPR=Math.round(DPR*8)/8;uiZoom(w);const W=Math.round(VW*DPR),H=Math.round(VH*DPR);if(cv.width!==W||cv.height!==H){cv.width=W;cv.height=H}}
 /* 介面跟著畫面放大（以 1060px 寬為基準），電腦全螢幕時文字也夠大夠清楚 */
-function uiZoom(w){const z=cl(w/1060,1,2.2),s=z>1.03?z.toFixed(3):"";const u=document.getElementById("ui"),c=document.getElementById("card"),t=document.getElementById("toastBox");if(u&&u.style.zoom!==s){u.style.zoom=s;if(c)c.style.zoom=s;if(t)t.style.zoom=s;for(const k of["mt","mu","fsb"]){const e=document.getElementById(k);if(e)e.style.zoom=s?Math.min(1.6,+s).toFixed(2):""}}}
+function uiZoom(w){w=Math.min(w,1060);const z=cl(w/1060,1,2.2),s=z>1.03?z.toFixed(3):"";const u=document.getElementById("ui"),c=document.getElementById("card"),t=document.getElementById("toastBox");if(u&&u.style.zoom!==s){u.style.zoom=s;if(c)c.style.zoom=s;if(t)t.style.zoom=s;for(const k of["mt","mu","fsb"]){const e=document.getElementById(k);if(e)e.style.zoom=s?Math.min(1.6,+s).toFixed(2):""}}}
 function setGfx(m,quiet){GQM=m;GQ=m==="auto"?2:GQK[m];if(typeof SVD!=="undefined"){SVD.gfx=m;if(!quiet)saveG()}fitCanvas();PERF.bad=0;PERF.t=0;if(document.getElementById("gfxs"))renderGfx()}
 const PERF={t:0,n:0,bad:0,last:0};
 function perfTick(dt){if(GQM!=="auto"||!G||G.pause||G.over||document.hidden)return;PERF.t+=dt;PERF.n++;if(PERF.t>=1.5){const fps=PERF.n/PERF.t;PERF.t=0;PERF.n=0;if(fps<48&&GQ>0){if(++PERF.bad>=2){GQ--;PERF.bad=0;fitCanvas();msg(`偵測到畫面不順，已自動把畫質降為「${GQN[GQ]}」（設定 → 畫質可調整）`,"#9be7ff")}}else PERF.bad=0}}
@@ -603,7 +634,7 @@ function fixSave(){try{if(SVD&&SVD.ch){const re=[];for(const id in SVD.ch){const
   SVD.inv.forEach(fixIt);for(const ci in SVD.ch){const p=SVD.ch[ci];if(p.job===undefined)p.job=0;if(p.br===undefined)p.br=-1;if(!p.look)p.look={};for(const k in p.eq)fixIt(p.eq[k])}
   dailyCheck();
 }
-let dirty=0;function saveG(){if(BKD!==bkKey())try{bkWrite(JSON.stringify(SVD))}catch(e){}if(SVD.ess>0){SVD.dust=(SVD.dust||0)+SVD.ess*300;SVD.ess=0}SVD.lastT=Date.now();sv(SKEY,JSON.stringify(SVD));dirty=0}
+let dirty=0;function saveG(){if(BKD!==bkKey())try{bkWrite(JSON.stringify(SVD))}catch(e){}if(SVD.ess>0){SVD.dust=(SVD.dust||0)+SVD.ess*300;SVD.ess=0}SVD.lastT=Date.now();sv(SKEY,JSON.stringify(SVD));dirty=0;syncEquipmentState()}
 setInterval(()=>{if(dirty)saveG()},4000);
 const prof=ci=>SVD.ch[ci]||{lv:1,xp:0,sp:0,sk:{},eq:{},job:0,br:-1,look:{},cls:0,name:"?",ghost:1};
 const slots=()=>Object.keys(SVD.ch).map(Number).sort((a,b)=>a-b),hasSlot=s=>!!SVD.ch[s],clsOf=s=>prof(s).cls||0;
@@ -855,7 +886,7 @@ const PTUP=[0,.06,.025,.01];
 const potHit=it=>it.pt>=GR.ap.t&&(!GR.ap.k||it.pl.filter(l=>l[0]===GR.ap.k).length>=GR.ap.n);
 function autoStop(m,good){clearInterval(GR.at);const A=GR.au;GR.au=null;if(A&&m)toast(`${m}（共洗 ${A.n} 次，花費 💰${fmtCP(A.g)}）`);if(good)SFX.legend();saveG();if(!$("m4").hidden)renderGrowth()}
 function autoStep(){const A=GR.au;if(!A){clearInterval(GR.at);return}const it=A.it,p=prof(GR.ci);if($("m4").hidden||!(SVD.inv.includes(it)||Object.values(p.eq).includes(it))){autoStop("已停止自動洗潛能");return}
-  const c=potCostL(it);if(SVD.gold<c){autoStop("金幣不足，自動洗潛能停止");return}SVD.gold-=c;A.n++;A.g+=c;const r=cubeRollL(it);it.pt=r.pt;it.pl=r.pl;if(r.up){toast(`潛能等級提升！→ ${PTN[r.pt]}`);beep(700,1400,.15,"sine",.05)}else beep(500+Math.random()*300,900,.04,"triangle",.025);
+  const c=potCostL(it);if(SVD.gold<c){autoStop("金幣不足，自動洗潛能停止");return}SVD.gold-=c;A.n++;A.g+=c;const r=cubeRollL(it);it.pt=r.pt;it.pl=r.pl;syncEquipmentState();if(r.up){toast(`潛能等級提升！→ ${PTN[r.pt]}`);beep(700,1400,.15,"sine",.05)}else beep(500+Math.random()*300,900,.04,"triangle",.025);
   if(potHit(it)){autoStop("🎉 達成目標！",1);return}if(A.n>=5000){autoStop("已洗 5000 次，自動停止");return}if(A.n%3===0)saveG();renderGrowth()}
 const lockFee=()=>Math.round(gachaPrice()*2),potCostL=it=>potCost(it)+(GR.plk&&GR.plk.id===it.id&&it.pt?lockFee():0);
 function cubeRollL(it){const r=cubeRoll(it);const L=GR.plk;if(r&&L&&L.id===it.id&&it.pl[L.i]){r.pl[L.i]=it.pl[L.i].slice()}return r}
@@ -957,10 +988,20 @@ function statsOf(slot){
 }
 function cpOfS(S){const off=((1.8+(S.mast??.2))/2)*S.atk*(1+Math.min(1,S.cr)*(S.cd-1))*(1/(S.as||1))*(1+(S.boss||0)*.3)*(1+(S.ign||0)*.3)*(1+((S.km||1)-1)*.3+((S.um||1)-1)*.15)*(1+(S.ls||0)*2)*(1+(S.burn||0)*.15);return Math.round(off*8+S.hp/(S.df||1)*.8+S.mp*.3)}
 const cpOf=sl=>cpOfS(statsOf(sl));
-function cpWith(sl,k,it){const p=prof(sl),o=p.eq[k];if(it)p.eq[k]=it;else delete p.eq[k];const v=cpOf(sl);if(o)p.eq[k]=o;else delete p.eq[k];return v}
+function cpWith(sl,k,it){const p=prof(sl),o=p.eq[k];if(it)p.eq[k]=it;else delete p.eq[k];try{return cpOf(sl)}finally{if(o)p.eq[k]=o;else delete p.eq[k]}}
 const itemCP=(sl,it)=>cpWith(sl,it.sl,it)-cpWith(sl,it.sl,null);
 const ADN=["關閉","普通","精良以下","稀有以下"];
-function addInv(it){if(SVD.adis&&it.ri<=SVD.adis-1&&it.anc===undefined&&!it.lk){SVD.dust+=dustOf(it);SVD.gold+=sellP(it);SVD.adn=(SVD.adn||0)+1;dirty=1;return}if(it.ri===4)qAdd("legend",1);SVD.inv.push(it);if(SVD.inv.length>invMax()){let k=-1,low=9;SVD.inv.forEach((x,i)=>{if(x.ri<low&&x.en===0&&!x.lk){low=x.ri;k=i}});if(k<0)k=0;const o=SVD.inv.splice(k,1)[0];SVD.gold+=sellP(o)}dirty=1}
+function addInv(it){let result='已入背包',removed=null;
+ if(SVD.adis&&it.ri<=SVD.adis-1&&it.anc===undefined&&!it.lk){SVD.dust+=dustOf(it);SVD.gold+=sellP(it);SVD.adn=(SVD.adn||0)+1;result='已自動分解'}else{
+  if(it.ri===4)qAdd('legend',1);SVD.inv.push(it);
+  if(SVD.inv.length>invMax()){let k=-1,low=9;SVD.inv.forEach((x,i)=>{if(x.ri<low&&x.en===0&&!x.lk){low=x.ri;k=i}});
+   // 全部鎖定時退回本次新物，不得出售已鎖定物。
+   if(k<0)k=SVD.inv.indexOf(it);removed=SVD.inv.splice(k,1)[0];SVD.gold+=sellP(removed);if(removed.id===it.id)result='滿包・已出售';else result='已入背包・滿包替售 '+removed.n;
+  }
+ }
+ dirty=1;if(typeof LIVE!=='undefined'){LIVE.inventoryVersion++;recordLoot(it,result);if(removed&&removed.id!==it.id)recordLoot(removed,'滿包・已出售')}
+ return result;
+}
 
 /* ============ 音效 ============ */
 let AC=null,mute=false,NB=null,SFXV=1,MUSV=.8;const sndT={};
@@ -1015,6 +1056,9 @@ const inGame=()=>G&&!G.over&&$("ui").hidden;
 addEventListener("keydown",e=>{
   musStart();
   if(KY.cap){e.preventDefault();e.stopPropagation();if(e.repeat)return;const c=e.code;if(c==="KeyP")toast("P 是暫停鍵，不能設定");else if(c==="Backspace"||c==="Delete")setKey(KY.cap[0],KY.cap[1],"");else if(c!=="Escape")setKey(KY.cap[0],KY.cap[1],KTOK(c));KY.cap=null;renderKeys();return}
+  if(e.code==="Escape"&&LIVE.attached&&!$("liveManager").hidden&&!document.body.classList.contains("manager-closed")&&$("ui").hidden){e.preventDefault();closeLiveManager();return}
+  if(LIVE.attached&&e.target.closest&&e.target.closest("#liveManager"))return;
+  if(e.code==="KeyG"&&G&&!G.over){e.preventDefault();openLiveManager();return}
   if(e.code==="Escape"&&G&&!G.over){e.preventDefault();togglePause();return}
   if(e.code==="KeyP"&&inGame()){e.preventDefault();togglePause();return}
   if(!inGame()){if(navKey(e))return}
@@ -1144,7 +1188,7 @@ function collect(it,p){
   if(it.k==="coin"){const n=Math.round(it.v*(1+p.S.gold));if(p.net)G.gg+=n;else{SVD.gold+=n;G.res.gold+=n;qAdd("gold",n);dirty=1}SFX.coin();spark(it.x,it.z,10,"#ffd75e",3,2)}
   else if(it.k==="gear"){
     const r=RAR[it.it.ri];if(p.net)evPush({k:"loot",it:it.it});else{addInv(it.it);G.res.items.push(it.it)}
-    msg(`${p.name} 獲得 [${r[0]}] ${it.it.n}`,r[1]);it.it.ri===4?SFX.legend():SFX.loot();spark(it.x,it.z,20,r[1],16,5);
+    msg(`${p.name} 拾取 [${r[0]}] ${it.it.n}${p.net?"":" · "+(SVD.inv.some(x=>x.id===it.it.id)?"已入背包":SVD.adis&&it.it.ri<=SVD.adis-1?"已自動分解":"滿包已出售")}`,r[1]);it.it.ri===4?SFX.legend():SFX.loot();spark(it.x,it.z,20,r[1],16,5);
     if(it.it.ri===4)ring(it.x,it.z,10,"#ffae1a",90,30);
   }
   else if(it.k==="portal"){if(!G.hid&&!G.bossOn&&!G.clr)hidEnter(G)}
@@ -1311,7 +1355,7 @@ function bossSp(f,e){
 
 /* ============ 遊戲流程 ============ */
 function newG(cfg){return{cfg,D:DF[cfg.diff||"n"],f:0,F:[],items:[],pr:[],fx:[],cam:0,ww:2400,theme:0,stage:cfg.stage||0,kills:0,need:0,bossOn:0,clr:0,ct:0,lose:0,lt:0,spt:40,over:false,pause:false,shake:0,flashW:0,banner:"",bt:0,msgs:[],res:{xp:0,gold:0,items:[],lv:0},ev:[],eid:0,gx:0,gg:0,net:cfg.net||0,nums:{},atkN:0,meId:0,deaths:0,raid:0,pool:null,tower:cfg.mode==="tower"?1:0,floor:cfg.floor||1,xpb:0}}
-function startGame(cfg){
+function startGame(cfg){NET.localGearHash="";
   if(cfg.mode==="raid"&&RAID[cfg.raid].wk){toast("公會 BOSS 已移除");return}if(cfg.mode==="raid"&&!RAID[cfg.raid].wk&&!cfg.free){if(rdnLeft()<=0){toast("今日遠征次數已用完（每天 3 次，不限難度，0 點重置）");return}rdnUse();saveG()}
   LAST=cfg;resetI(IN);G=newG(cfg);G.evt=eventNow();if(G.evt.L.length)setTimeout(()=>G&&msg("🎉 "+G.evt.L.map(x=>x[0]).join("、")+" 進行中！","#c8f08a"),600);const S=STG[G.stage];G.theme=S.th;G.need=S.kill;
   if(SVD.xpb>0)G.xpb=1;
@@ -2519,7 +2563,7 @@ function hud(){
   if(G.net===2&&performance.now()-NET.last>1500){X.textAlign="center";X.font="bold 14px sans-serif";X.fillStyle="#ffb3c0";X.fillText("連線延遲中…",VW/2,110)}
 }
 function render(){
-  FR++;if(MUS.started)musSet(G?G.theme:10,G&&G.bossOn&&!G.clr&&!G.over);
+  syncBattleLayout();FR++;if(MUS.started)musSet(G?G.theme:10,G&&G.bossOn&&!G.clr&&!G.over);
   X.setTransform(DPR,0,0,DPR,0,0);X.imageSmoothingQuality="high";X.clearRect(0,0,VW,VH);
   if(!G){menuScene();return}
   const sx=0,sy=0;
@@ -2602,7 +2646,7 @@ function show(id){setTimeout(()=>{updRes();const Q=$("qbar");if(Q)Q.hidden=!!(G&
 function panelScroll(id){const p=$(id);if(!p)return;
   for(const el of[p,...p.querySelectorAll(".rows,.inv,.list,[data-scroll]")])if(el.scrollHeight>el.clientHeight)el.scrollTop=0;
   if(id==="m5"){const c=p.querySelector(".row.cur");if(c){focusEl(c);const pr=p.getBoundingClientRect(),cr=c.getBoundingClientRect();p.scrollTop=Math.max(0,p.scrollTop+cr.top-pr.top-p.clientHeight/2+cr.height/2)}}}
-function toMenu(){if(NET.role)netLeave();G=null;$("tc").classList.remove("show");$("ov").classList.remove("show");show("m0")}
+function toMenu(){detachLiveManager();if(NET.role)netLeave();G=null;$("tc").classList.remove("show");$("ov").classList.remove("show");show("m0")}
 function togglePause(){
   if(!G||G.over)return;
   if(G.net){const open=!$("ui").hidden;if(open)$("ui").hidden=true;else{show("m3");$("rs").textContent="繼續（連線中不會暫停）";$("qend").hidden=!(G.tower&&G.net===1)}return}
@@ -2917,10 +2961,10 @@ $("sgo").onclick=()=>startGame({stage:SEL.stage,diff:SEL.diff,picks:[SEL.ci],sta
 
 /* ============ 角色養成 ============ */
 let GR={ci:0,tab:"e",sel:null,back:"m0",ap:{t:4,k:"",n:1}};
-function openGrow(back){GR.back=back||"m0";GR.sel=null;HUB="m4";renderGrowth();show("m4")}
+function openGrow(back){if(G&&!G.over){openLiveManager();return}GR.back=back||"m0";GR.sel=null;HUB="m4";renderGrowth();show("m4")}
 $("gtool").onclick=e=>{if(hasSlot(GR.ci))SEL.ci=GR.ci;menuGo(e)};
-$("gbk").onclick=()=>{HUB=null;if(GR.back==="m6"){netResendHello();show("m6");renderLobby()}else show(GR.back)};
-function renderGrowth(){if($("cmpTip")){$("cmpTip").hidden=true;$("cmpTip").dataset.id=""}
+$("gbk").onclick=()=>{if(LIVE.attached){closeLiveManager();return}HUB=null;if(GR.back==="m6"){netResendHello();show("m6");renderLobby()}else show(GR.back)};
+function renderGrowthContent(){LIVE.seenVersion=LIVE.inventoryVersion;if($("cmpTip")){$("cmpTip").hidden=true;$("cmpTip").dataset.id=""}
   renderChars($("gch"),GR.ci);
   if(!hasSlot(GR.ci))GR.ci=slots()[0];if(!hasSlot(GR.ci)){$("ginf").innerHTML="還沒有角色";$("gbody").innerHTML="";return}
   const p=prof(GR.ci),CK=p.cls,c=CH[CK],S=statsOf(GR.ci);
@@ -2928,6 +2972,7 @@ function renderGrowth(){if($("cmpTip")){$("cmpTip").hidden=true;$("cmpTip").data
   $("ginf").innerHTML=`<div class="gh"><span class="gnm">${esc(p.name)}</span><span class="gjb">${jobName(CK,p.job||0,p.br??-1)}　Lv.${p.lv}</span><span class="gcp">⚔ 戰力 ${fmtCP(cpOf(GR.ci))}</span><span class="gsp${p.sp?" on":""}">技能點 ${p.sp}</span><span class="gold">💰 ${fmtCP(SVD.gold)}</span><span class="gds">★ 星塵 ${fmtCP(SVD.dust)}</span></div><div class="xpb" style="max-width:none"><i style="width:${p.lv>=MAXLV?100:p.xp/xpNeed(p.lv)*100}%"></i></div><div class="gxp">${p.lv>=MAXLV?"已滿級":`經驗 ${fmtCP(p.xp)} / ${fmtCP(xpNeed(p.lv))}`}</div><div class="gst">${chip("生命",fmtCP(S.hp))}${chip("MP",fmtCP(S.mp))}${chip("攻擊",fmtCP(S.atk))}${chip("暴擊率",Math.round(S.cr*100)+"%")}${chip("暴擊傷害","×"+S.cd.toFixed(2))}${chip("減傷",Math.round((1-S.df)*100)+"%")}${chip("速度",S.sp.toFixed(2))}${S.ls?chip("吸血",(S.ls*100).toFixed(1)+"%"):""}${S.skd>1?chip("技能傷害","+"+Math.round((S.skd-1)*100)+"%"):""}${S.boss?chip("BOSS傷害","+"+Math.round(S.boss*100)+"%"):""}${S.mast>.2?chip("熟練度",Math.round(S.mast*100)+"%"):""}${S.aspd?chip("攻擊速度","+"+Math.round(S.aspd*100)+"%"):""}${S.arm?chip("防禦力",fmtCP(Math.round(S.arm))):""}</div><div class="gact">${Object.keys(S.sets).filter(f=>S.sets[f]>=2).map(f=>`<span style="color:#6ef08f;margin-right:10px">${SETN[f]}套裝 ${S.sets[f]} 件</span>`).join("")}${Object.keys(S.anc||{}).filter(a=>S.anc[a]>=2).map(a=>`<span style="color:#4fe0d0;margin-right:10px">遠古${ANC[a]} ${S.anc[a]} 件</span>`).join("")}${jobHTML(CK,p)}</div><details class="cpa sov"${GR.sov?" open":""}><summary>📋 能力總覽（各系統提供了哪些能力）</summary>${GR.sov?statSrcHTML(GR.ci):""}</details><details class="cpa"${GR.cpa?" open":""}><summary>📊 戰力分析（看看戰力從哪裡來、該強化哪裡）</summary>${GR.cpa?cpBreakHTML(GR.ci):""}</details>`;
   document.querySelectorAll("#gtab button").forEach(b=>b.classList.toggle("on",b.dataset.t===GR.tab));
   {const D=grDots(GR.ci);GDC={t:Date.now(),ci:GR.ci,d:D};GR.dots=D;document.querySelectorAll("#gtab button").forEach(b=>b.classList.toggle("rd",!!D[b.dataset.t]));$("gch").querySelectorAll(".cc[data-i]").forEach(c=>{const i=+c.dataset.i;if((hasSlot(i)&&prof(i).sp>0)||(i===GR.ci&&D.e))c.insertAdjacentHTML("beforeend",'<i class="rdot"></i>')})}
+  if(GR.tab==="v"){$("gbody").innerHTML=statSrcHTML(GR.ci)+cpBreakHTML(GR.ci);return}
   if(GR.tab==="a"){$("gbody").innerHTML=artHTML();return}
   if(GR.tab==="o"){$("gbody").innerHTML=soulHTML(prof(GR.ci));return}
   if(GR.tab==="r"){$("gbody").innerHTML=srnHTML(prof(GR.ci));return}
@@ -2948,7 +2993,7 @@ function renderGrowth(){if($("cmpTip")){$("cmpTip").hidden=true;$("cmpTip").data
     const CP0=cpOf(GR.ci);const sel=GR.sel,selIt=sel?(sel.src==="eq"?p.eq[sel.k]:SVD.inv.find(x=>x.id===sel.id)):null;
     const eq=SL.map(([k,n,ic])=>{const it=p.eq[k];return`<div class="eqs${it?" has r"+it.ri:""}${sel&&sel.src==="eq"&&sel.k===k?" sel":""}" data-k="${k}" style="${it?`--rc:${RAR[it.ri][1]};border-color:${RAR[it.ri][1]}`:""}"><span class="ic">${it?icoImg(it,34):ic}</span>${it?`<span style="color:${RAR[it.ri][1]}">${it.n}${it.en?" +"+it.en:""}</span>`:n}${(GR.dots&&GR.dots.sl[k])?'<i class="rdot" title="背包有更好的裝備"></i>':""}</div>`}).join("");
     $("gbody").innerHTML=`<div class="gtop"><div class="eqgrid">${eq}</div><div id="idet">${detHTML(selIt,sel&&sel.src,p)}</div></div>${totHTML(p)}
-      <div class="invbar"><span>背包 ${SVD.inv.length}/${invMax()}　（▲ = 穿上戰力提升　🔒 = 已鎖定）</span><span><button class="mini on" id="autoeq">⚡ 一鍵穿最好</button> <button class="mini" id="isort" title="切換背包排序方式">🗂 排序：${ISN[SVD.isort||0]}</button> <button class="mini" id="disall" style="${GR.dc&&Date.now()-GR.dc<3000?"color:#ff8a8a;border-color:#ff8a8a":""}">${GR.dc&&Date.now()-GR.dc<3000?`⚠ 再按一次確認分解 ${SVD.inv.filter(x=>!x.lk&&x.anc===undefined&&x.ri<=(SVD.dmax??3)).length} 件`:"♻ 一鍵分解剩餘裝備"}</button> <button class="mini" id="dmax" title="一鍵分解會處理的最高稀有度">分解範圍：${RAR[SVD.dmax??3][0]}以下</button> <button class="mini" id="adis">自動分解：${ADN[SVD.adis||0]}</button></span></div>
+      <div class="invbar"><span><button class="mini" id="liveRefresh">更新背包</button> 背包 ${SVD.inv.length}/${invMax()}　（▲ = 穿上戰力提升　🔒 = 已鎖定）</span><span><button class="mini on" id="autoeq">⚡ 一鍵穿最好</button> <button class="mini" id="isort" title="切換背包排序方式">🗂 排序：${ISN[SVD.isort||0]}</button> <button class="mini" id="disall" style="${GR.dc&&Date.now()-GR.dc<3000?"color:#ff8a8a;border-color:#ff8a8a":""}">${GR.dc&&Date.now()-GR.dc<3000?`⚠ 再按一次確認分解 ${(GR.batchIds||[]).length} 件`:"♻ 一鍵分解剩餘裝備"}</button> <button class="mini" id="dmax" title="一鍵分解會處理的最高稀有度">分解範圍：${RAR[SVD.dmax??3][0]}以下</button> <button class="mini" id="adis">自動分解：${ADN[SVD.adis||0]}</button></span></div>
             <div class="seg invf" id="invf">${[["","全部"],...SL.map(s=>[s[0],s[2]+" "+s[1]])].map(([k,n])=>`<button data-f="${k}" class="${(GR.flt||"")===k?"on":""}">${n}<small> ${k?SVD.inv.filter(x=>x.sl===k).length:SVD.inv.length}</small></button>`).join("")}</div><div class="inv">${invSorted(p,CP0).map(it=>{const cdf=p.lv>=reqLv(it)?cpWith(GR.ci,it.sl,it)-CP0:0,better=cdf>0;const ok=p.lv>=reqLv(it);return`<div class="tile r${it.ri}${it.anc!==undefined?" anc":""}${sel&&sel.src==="inv"&&sel.id===it.id?" sel":""}" data-id="${it.id}" style="--rc:${RAR[it.ri][1]}${ok?"":";opacity:.5"}" title="${it.n}">${icoImg(it,"78%")}${it.anc!==undefined?'<span style="position:absolute;left:2px;bottom:9px;font-size:9px;color:#4fe0d0;font-weight:900">古</span>':""}${it.pt?`<span style="position:absolute;right:3px;top:0;font-size:9px;color:${PTC[it.pt]}">◆</span>`:""}${better?`<span class="upa" title="戰力 +${cdf}">▲</span>`:""}${it.lk?'<span style="position:absolute;left:2px;top:0;font-size:9px">🔒</span>':""}<span class="lvv">${it.ilv}</span>${it.en||it.sf?`<span class="en">${it.sf?`<b style="color:#ffd23d">★${it.sf}</b> `:""}${it.en?"+"+it.en:""}</span>`:""}</div>`}).join("")||'<div class="sub" style="grid-column:1/-1">背包是空的，闖關打怪會掉落裝備</div>'}</div>`;
   }
 }
@@ -2998,12 +3043,12 @@ function detHTML(it,src,p){
   const sets=(it.anc!==undefined?(()=>{const n=Object.values(p.eq).filter(x=>x&&x.anc===it.anc).length;return`<div style="font-size:11px;margin-top:3px;color:#4fe0d0">遠古套裝：${ANC[it.anc]}系列（身上 ${n}/12）<br>${ANCB.map(([c,b])=>`<span style="color:${n>=c?"#6ef08f":"#777"}">${c} 件：${Object.entries(b).map(([k,v])=>STN[k][0]+" +"+stVal(k,v*ancK(it.anc))).join("、")}</span>`).join("<br>")}</div>`})():"")+(it.fam>=3?(()=>{const n=Object.values(p.eq).filter(x=>x&&x.fam===it.fam).length;return`<div style="font-size:11px;margin-top:3px;color:#ffd166">套裝：${SETN[it.fam]}系列（身上 ${n}/12）<br>${SETB.map(([c,b])=>`<span style="color:${n>=c?"#6ef08f":"#777"}">${c} 件：${Object.entries(b).map(([k,v])=>STN[k][0]+" +"+stVal(k,v*setK(it.fam))).join("、")}</span>`).join("<br>")}</div>`})():"");
   const P=GR.pend&&GR.pend.id===it.id?GR.pend:null,F=GR.fpend&&GR.fpend.id===it.id?GR.fpend:null;
   return`<div class="dhd"><div class="t" style="color:${r[1]}">${it.n}${it.en?" +"+it.en:""}${it.sf?` <span style="color:#ffd23d;font-size:12px">★${it.sf}</span>`:""}</div><button class="lkb${it.lk?" on":""}" data-do="lock" title="${it.lk?"已鎖定（不會被出售／分解），點一下解鎖":"點一下鎖定（防止出售／分解）"}">${it.lk?"🔒":"🔓"}</button><span class="qhelp sm" title="">?<div class="qtip">${rangeInner(it)}</div></span></div>${sfRow(it)}
-  <div style="font-size:12px;color:#ffb070;font-weight:800">⚔ 裝備戰力 ${fmtCP(icp)}</div><div style="color:var(--sub);font-size:11px">${r[0]}　${SLN[it.sl]}　<span style="color:${p.lv>=reqLv(it)?"inherit":"#ff6b6b"}">需要 Lv.${reqLv(it)}</span>${src==="eq"?"　<span style='color:#9be7ff'>（裝備欄點兩下卸下）</span>":""}</div>
+  <div class="rarity-label" style="--rc:${r[1]}">${r[0]} · ${SLN[it.sl]}</div><div style="font-size:12px;color:#ffb070;font-weight:800">⚔ 裝備戰力 ${fmtCP(icp)}</div><div style="color:var(--sub);font-size:11px">${r[0]}　${SLN[it.sl]}　<span style="color:${p.lv>=reqLv(it)?"inherit":"#ff6b6b"}">需要 Lv.${reqLv(it)}</span>${src==="eq"?"　<span style='color:#9be7ff'>（裝備欄點兩下卸下）</span>":""}</div>
   ${sec(`<div class="dcol"><div><div class="dtl">◆ 屬性詞條 <small style="color:var(--sub);font-weight:600">（含強化、星力、潛能、星火；滑鼠移上去看組成）</small></div>${stTxt(it)}</div>${sets?`<div class="dset">${sets}</div>`:""}</div>`,`<button class="mini" data-do="en" ${full||SVD.gold<cost?"disabled":""}>${full?"已強化到頂 +10":`🔨 強化 +${it.en+1}<small>💰${fmtCP(cost)}・成功率 ${pct(rate)}</small>`}</button><button class="mini" data-do="sf" ${sfull||sfNo?"disabled":""} style="${sct&&!sfull?"color:#ffd23d;border-color:#ffd23d":""}">${sfull?"⭐ 星力已滿 30 星":`⭐ 星力 ${it.sf||0}→${(it.sf||0)+1}<small>📜 強化卷 ×1（剩 ${SVD.sfs||0}）・${sct?"CHANCE TIME 100%":Math.round(sfRate(it)*100)+"%"}</small>`}</button>`)}
   ${sec(flameHTML(it),`<button class="mini" data-do="flame" ${(SVD.flame||0)<1?"disabled":""} style="color:#ff9a3d;border-color:#ff9a3d">🔥 使用星火<small>擁有 ${SVD.flame||0} 個</small></button>${F?`<button class="mini on" data-do="fapply">套用新星火</button><button class="mini" data-do="fkeep">保留原本</button>`:""}`)}
   ${sec(potHTML(it),`<button class="mini" data-do="cube" ${SVD.gold<pc?"disabled":""}>${it.pt?"🎲 洗潛能":"🔍 鑑定潛能"}<small>💰${fmtCP(pc)}</small></button>${P?`<button class="mini on" data-do="papply">套用新潛能</button><button class="mini" data-do="pkeep">保留原本</button>`:""}`)}
-  ${autoPotHTML(it)}${cmp}
-  ${src==="inv"?`<div class="btns2">${p.lv>=reqLv(it)?`<button class="mini on" data-do="eq">裝備</button>`:`<button class="mini" disabled>等級不足</button>`}<button class="mini" data-do="sell" ${it.lk?"disabled":""}>出售 💰${sellP(it)}</button><button class="mini" data-do="dis" ${it.lk?"disabled":""}>分解 ★${dustOf(it)}</button></div>`:""}`;
+  ${autoPotHTML(it)}${src==="inv"?gearCompareHTML(it):""}${cmp}
+  ${src==="inv"?`<div class="btns2">${p.lv>=reqLv(it)?`<button class="mini on" data-do="eq">裝備</button>`:`<button class="mini" disabled>等級不足</button>`}<button class="mini" data-do="sell" ${it.lk?"disabled":""}>出售 💰${sellP(it)}</button><button class="mini" data-do="dis" ${it.lk?"disabled":""}>分解 ★${dustOf(it)}</button></div>`:`<div class="btns2"><button class="mini" data-do="uneq">卸下裝備</button></div>`}`;
 }
 function jobHTML(ci,p){
   const j=p.job||0,ok=j<4&&p.lv>=JOBLV[j]&&SVD.gold>=JOBCOST[j];
@@ -3015,7 +3060,7 @@ function jobHTML(ci,p){
   return h;
 }
 $("ginf").onclick=e=>{if(e.target.closest(".cpa summary")){e.preventDefault();if(e.target.closest(".sov"))GR.sov=!GR.sov;else GR.cpa=!GR.cpa;renderGrowth();return}if(e.target.id==="delc"){if(GR.del!==GR.ci){GR.del=GR.ci;renderGrowth();return}const p=prof(GR.ci);for(const k in p.eq)if(p.eq[k])SVD.inv.push(p.eq[k]);delete SVD.ch[GR.ci];GR.del=null;saveG();toast(`已刪除角色「${p.name}」，裝備已放回背包`);GR.ci=slots()[0];if(!hasSlot(GR.ci)){show("m0");return}renderGrowth();return}GR.del=null;const b=e.target.closest("button[data-jb]");if(!b)return;const p=prof(GR.ci),j=p.job||0;if(j>=4||p.lv<JOBLV[j]||SVD.gold<JOBCOST[j])return;SVD.gold-=JOBCOST[j];if(j===0)p.br=+b.dataset.jb;p.job=j+1;saveG();SFX.legend();toast(`轉職成功！成為「${jobName(p.cls,p.job,p.br)}」　大絕招：「${ultName(p.cls,p.job,p.br)}」`);renderGrowth()};
-$("gch").onclick=e=>{const el=e.target.closest(".cc");if(!el)return;if(el.dataset.new){openCreate("m4");return}const ci=+el.dataset.i;if(ci===GR.ci){SAL.ci=ci;SAL.d={...prof(ci).look};SAL.back="m4";SAL.del=null;renderSalon();show("m12");return}GR.ci=ci;GR.sel=null;renderGrowth()};
+$("gch").onclick=e=>{const el=e.target.closest(".cc");if(!el)return;if(el.dataset.new){if(LIVE.attached){toast("冒險結束後可建立角色");return}openCreate("m4");return}const ci=+el.dataset.i;if(ci===GR.ci){if(LIVE.attached){toast("冒險結束後可編輯外觀；戰鬥中可切換角色整理裝備");return}SAL.ci=ci;SAL.d={...prof(ci).look};SAL.back="m4";SAL.del=null;renderSalon();show("m12");return}GR.ci=ci;GR.sel=null;renderGrowth()};
 $("gtab").onclick=e=>{const t=e.target.dataset.t;if(!t)return;GR.tab=t;renderGrowth()};
 function stopHold(){clearTimeout(GR.ht);GR.ht=0}
 /* 通用「按住連點」：寵物／神獸升級升星、公會建築、裝備強化、星力、洗潛能、重鑄 */
@@ -3050,15 +3095,16 @@ $("gbody").onclick=e=>{
   const p=prof(GR.ci);
   const b=e.target.closest("button[data-id]");if(b){if(e.detail>0&&window.PointerEvent)return;if(upgrade(GR.ci,b.dataset.id)){beep(600,1000,.1,"sine");renderGrowth()}return}
   const id=e.target.id;
+  if(id==="liveRefresh"){renderGrowth();return}
   if(id==="sauto"){const n=autoSkill(GR.ci);if(n){SFX.lvup();toast(`⚡ 已自動分配 ${n} 點技能點`)}else toast("沒有可以分配的技能點");renderGrowth();return}
   if(id==="greset"){p.sk={};p.sp=2*(p.lv-1)+(p.spb||0);saveG();renderGrowth();return}
-  if(id==="disall"){if(!GR.dc||Date.now()-GR.dc>3000){GR.dc=Date.now();renderGrowth();return}GR.dc=0;let d=0,g=0,n=0;const dm=SVD.dmax??3;SVD.inv=SVD.inv.filter(x=>{if(x.lk||x.anc!==undefined||x.ri>dm)return true;d+=dustOf(x);g+=sellP(x);n++;return false});SVD.dust+=d;SVD.gold+=g;saveG();toast(n?`♻ 分解 ${n} 件，獲得 💰${fmtCP(g)}、★${fmtCP(d)}`:"沒有可分解的裝備");if(n)SFX.legend();GR.sel=null;renderGrowth();return}
+  if(id==="disall"){if(!GR.dc||Date.now()-GR.dc>3000){GR.dc=Date.now();GR.batchIds=SVD.inv.filter(x=>!x.lk&&x.anc===undefined&&x.ri<=(SVD.dmax??3)).map(x=>x.id);renderGrowth();return}GR.dc=0;let d=0,g=0,n=0;const dm=SVD.dmax??3,ids=new Set(GR.batchIds||[]);GR.batchIds=null;SVD.inv=SVD.inv.filter(x=>{if(!ids.has(x.id)||x.lk||x.anc!==undefined||x.ri>dm||Object.values(SVD.ch).some(p=>Object.values(p.eq).some(it=>it&&it.id===x.id)))return true;d+=dustOf(x);g+=sellP(x);n++;return false});SVD.dust+=d;SVD.gold+=g;saveG();toast(n?`♻ 分解 ${n} 件，獲得 💰${fmtCP(g)}、★${fmtCP(d)}`:"沒有可分解的裝備");if(n)SFX.legend();GR.sel=null;renderGrowth();return}
   if(id==="isort"){SVD.isort=((SVD.isort||0)+1)%ISN.length;saveG();renderGrowth();return}
   {const fb=e.target.closest("#invf button");if(fb){GR.flt=fb.dataset.f;renderGrowth();return}}
   if(id==="dmax"){{const L=[2,3,4,5];SVD.dmax=L[(L.indexOf(SVD.dmax??3)+1)%L.length]}saveG();toast(`一鍵分解只會處理「${RAR[SVD.dmax][0]}」以下的裝備（遠古與鎖定除外）`);renderGrowth();return}
   if(id==="adis"){SVD.adis=((SVD.adis||0)+1)%4;saveG();toast(SVD.adis?`撿到「${ADN[SVD.adis]}」裝備時自動分解成金幣與星塵（遠古與鎖定除外）`:"自動分解已關閉");renderGrowth();return}
-  if(id==="sell0"||id==="sell1"||id==="sell2"){const mx=+id[4];let g=0,n=0;SVD.inv=SVD.inv.filter(x=>{if(x.ri<=mx&&x.en===0){g+=sellP(x);n++;return false}return true});SVD.gold+=g;saveG();toast(`出售 ${n} 件，獲得 💰${g}`);GR.sel=null;renderGrowth();return}
-  if(id==="dis1"){let d=0,n=0;SVD.inv=SVD.inv.filter(x=>{if(x.ri<=1&&x.en===0){d+=dustOf(x);n++;return false}return true});SVD.dust+=d;saveG();toast(`分解 ${n} 件，獲得 ★${d}`);GR.sel=null;renderGrowth();return}
+  if(id==="sell0"||id==="sell1"||id==="sell2"){const mx=+id[4];let g=0,n=0;SVD.inv=SVD.inv.filter(x=>{if(!x.lk&&x.ri<=mx&&x.en===0){g+=sellP(x);n++;return false}return true});SVD.gold+=g;saveG();toast(`出售 ${n} 件，獲得 💰${g}`);GR.sel=null;renderGrowth();return}
+  if(id==="dis1"){let d=0,n=0;SVD.inv=SVD.inv.filter(x=>{if(!x.lk&&x.ri<=1&&x.en===0){d+=dustOf(x);n++;return false}return true});SVD.dust+=d;saveG();toast(`分解 ${n} 件，獲得 ★${d}`);GR.sel=null;renderGrowth();return}
   if(id==="autoeq"){const c0=cpOf(GR.ci);let n=0;for(let pass=0;pass<2;pass++)for(const[k]of SL){let bs=cpOf(GR.ci),bi=-1;SVD.inv.forEach((x,i)=>{if(x.sl===k&&p.lv>=reqLv(x)){const v=cpWith(GR.ci,k,x);if(v>bs){bs=v;bi=i}}});if(bi>=0){const it=SVD.inv.splice(bi,1)[0];if(p.eq[k])SVD.inv.push(p.eq[k]);p.eq[k]=it;n++}}saveG();const c1=cpOf(GR.ci);toast(n?`⚡ 換上 ${n} 件裝備，戰力 ${fmtCP(c0)} → ${fmtCP(c1)}（+${fmtCP((c1-c0))}）`:"身上已經是戰力最高的組合了");renderGrowth();return}
   const d=e.target.closest("button[data-do],button[data-apc],button[data-apt]");
   if(d&&GR.sel){
@@ -3186,7 +3232,7 @@ function bindConn(c){
 }
 function netSend(t,d){const m={t,d};try{if(NET.kind==="bc"){if(NET.bc)NET.bc.postMessage({...m,from:NET.myId,to:NET.other||""})}else if(NET.conn&&NET.conn.open)NET.conn.send(m)}catch(e){}}
 function helloData(){const S=statsOf(NET.ci);return{ci:NET.ci,st:S,lv:S.lv,name:S.name,cls:S.cls}}
-function netResendHello(){if(NET.role==="guest"&&NET.ok)netSend("hello",helloData())}
+function netResendHello(){if(G&&!G.over){syncEquipmentState();return}if(NET.role==="guest"&&NET.ok)netSend("hello",helloData())}
 function netLobbyInfo(){if(NET.role==="host"&&NET.ok)netSend("lobby",{cp:cpOf(NET.ci),ci:NET.ci,name:prof(NET.ci).name,cls:prof(NET.ci).cls,lv:prof(NET.ci).lv,stage:RM.stage,diff:SEL.diff,mode:RM.mode,floor:RM.floor||1,raid:RM.raid||0,rd:RM.rd??0,hard:RM.hard||0})}
 function startHB(){clearInterval(NET.hb);NET.hb=setInterval(()=>{
   if(!NET.role)return;
@@ -3196,7 +3242,10 @@ function startHB(){clearInterval(NET.hb);NET.hb=setInterval(()=>{
 function onNet(m){
   NET.last=performance.now();const d=m.d;
   switch(m.t){
-    case"hello":if(NET.role!=="host")return;{const first=!NET.ok;NET.ok=true;NET.rem=d;if(G&&!G.over&&G.net===1){const f=G.F.find(f=>f.net);if(f&&d.st&&d.st.ci===f.ci)refreshP(f,d.st)}if(first){toast("玩家 2 加入了房間！");SFX.loot()}netLobbyInfo();renderLobby()}break;
+    case"hello":if(NET.role!=="host")return;{const first=!NET.ok;NET.ok=true;NET.rem=d;if(G&&!G.over&&G.net===1)return;if(first){toast("玩家 2 加入了房間！");SFX.loot()}netLobbyInfo();renderLobby()}break;
+    case"gear":receiveGear(d);break;
+    case"gearAck":receiveGearAck(d);break;
+    case"actorGear":receiveActorGear(d);break;
     case"full":status("房間已經滿了");NET.ok=false;break;
     case"lobby":if(NET.role!=="guest")return;{const first=!NET.ok;NET.ok=true;NET.host=d;if(first){toast("已加入房間！");SFX.loot()}renderLobby()}break;
     case"go":if(NET.role==="guest")onGo(d);break;
@@ -3211,7 +3260,7 @@ function onNetClose(){
   if(NET.role==="host"){NET.rem=null;NET.conn=null;NET.other="";if(G&&!G.over){const f=G.F.find(f=>f.net);if(f){f.dead=true;f.lives=0;f.hp=0;f.st="dead"}toast("玩家 2 已離線")}else if(was)toast("玩家 2 離開了房間");status(`房間 ${NET.code} 等待對方加入…`)}
   else{if(G&&!G.over){G.over=true;showModal({ic:"📡",h:"連線中斷",sub:"與房主的連線已中斷",g:[],btns:[["回主選單",toMenu,1]]})}else if(was)toast("房主已離開");netLeave();renderLobby()}
 }
-function netLeave(silent){
+function netLeave(silent){NET.gearPending=null;NET.localGearHash="";
   if(NET.role)netSend("bye",0);
   clearInterval(NET.tmr);clearInterval(NET.hb);
   try{NET.conn&&NET.conn.close()}catch(e){}try{NET.peer&&NET.peer.destroy()}catch(e){}try{NET.bc&&NET.bc.close()}catch(e){}
@@ -3245,11 +3294,11 @@ function netHostStart(){
   const cfg=RM.mode==="asl"?{mode:"assault",raid:aslBoss(),rd:0,aslv:Math.max(prof(NET.ci).lv,NET.rem.lv||1),stage:0,diff:"n",picks:[NET.ci,NET.rem.ci],stats:[statsOf(NET.ci),NET.rem.st],remote:1,net:1}:{mode:"raid",raid:RM.raid||0,rd:RM.rd??0,hard:RM.hard||0,floor:RM.floor||1,stage:RM.mode==="tower"?0:RM.stage,diff:RM.mode==="tower"?"n":SEL.diff,picks:[NET.ci,NET.rem.ci],stats:[statsOf(NET.ci),NET.rem.st],remote:1,net:1};
   if(cfg.mode==="raid"&&!RAID[cfg.raid].wk&&rdnLeft()<=0){toast("你今天的遠征次數已用完（每天 3 次）");return}
   resetI(NET.gin);NET.ca=NET.cj=NET.cs=NET.cu=NET.cq=NET.cw=NET.cv=0;
-  netSend("go",{cfg,gid:Date.now()});startGame(cfg);
+  cfg.gearEpoch=Date.now()+"-"+Math.random().toString(36).slice(2);NET.gearReceived=0;NET.gearRevision=0;NET.gearPending=null;netSend("go",{cfg,gid:Date.now()});startGame(cfg);
 }
 function netBackLobby(){G=null;$("tc").classList.remove("show");netSend("back",0);netLobbyInfo();show("m6");renderLobby()}
 function onGo(d){
-  const cfg=d.cfg;resetI(IN);NET.ents=new Map();NET.eid=0;NET.gx=0;NET.gg=0;NET.last=performance.now();NET.lastIn="";
+  const cfg=d.cfg;NET.gearRevision=0;NET.gearPending=null;NET.localGearHash="";resetI(IN);NET.ents=new Map();NET.eid=0;NET.gx=0;NET.gg=0;NET.last=performance.now();NET.lastIn="";
   if(cfg.mode==="raid"&&!RAID[cfg.raid].wk){rdnUse();saveG()}G=newG(cfg);G.net=2;if(cfg.mode==="assault"){G.asl=1;G.tl=180*60}else if(cfg.mode==="raid")G.tl=RTL[rdOf(cfg)]*60;G.theme=STG[G.stage].th;G.need=STG[G.stage].kill;G.cfg=cfg;if(SVD.xpb>0)G.xpb=1;
   $("ui").hidden=true;$("ov").classList.remove("show");$("tc").classList.toggle("show",matchMedia("(pointer:coarse)").matches);
   clearInterval(NET.tmr);NET.tmr=setInterval(sendIn,33);
@@ -3296,6 +3345,7 @@ function onSnap(d){
     }
     Object.assign(f,{dir,hp,mhp,mp,mmp,st,av,spk,spc,ut,bk,dead:!!dead,lv,flash,rage,inv,spawn,lives,aura,pl,vy,lastHit:rec?G.f-10:-999,cb,ax,shr,sh:shr>0?1:0,pet,ptl,job,br,enr,scd,scd2,b3t,b3cd,bst,bsl,bss,ucd,asSh:ash>=0?ash:undefined,pex:pxs?pxs.split(","):[]});
     if(f.isP&&(f.apj!==job||f.apb!==br)){f.apj=job;f.apb=br;const S0=(G.cfg.stats||[])[pl]||{};f.ap=apOfP(f.ci,S0.look,job,br,S0.vis);f.atkT=atkTOf(f.ci,job,br);f.sc=1.2}
+    if(f.isP){const S0=(G.cfg.stats||[])[pl];if(S0&&f.gearHash!==JSON.stringify(S0)){f.gearHash=JSON.stringify(S0);f.S=S0;f.ap=apOfP(f.ci,S0.look,job,br,S0.vis);f.atkT=S0.atkT}}
     if(f.isP&&!f.S)f.S={area:1};
     if(f.t===undefined||Math.abs(f.t-t)>2)f.t=t;
     seen.add(id);
@@ -3313,7 +3363,7 @@ function onSnap(d){
     else if(e.k==="asl"){aslGrant(e.left||0)}
     else if(e.k==="dust"){SVD.dust+=e.n;G.res.dust=(G.res.dust||0)+e.n;msg(`獲得 ★${e.n} 星塵`,"#c8b0ff")}
     else if(e.k==="gtk"){SVD.gtk=(SVD.gtk||0)+e.n;msg(`🤝 互助獎勵：🎟 轉蛋券 ×${e.n}`,"#7fd8ff")}
-    else if(e.k==="loot"){addInv(e.it);G.res.items.push(e.it);const r=RAR[e.it.ri];msg(`獲得 [${r[0]}] ${e.it.n}`,r[1]);e.it.ri===4?SFX.legend():SFX.loot()}
+    else if(e.k==="loot"){addInv(e.it);G.res.items.push(e.it);const r=RAR[e.it.ri];msg(`拾取 [${r[0]}] ${e.it.n} · ${SVD.inv.some(x=>x.id===e.it.id)?"已入背包":SVD.adis&&e.it.ri<=SVD.adis-1?"已自動分解":"滿包已出售"}`,r[1]);e.it.ri===4?SFX.legend():SFX.loot()}
     else if(e.k==="end"){G.over=true;if(G.xpb&&SVD.xpb>0&&(e.win||e.tower))SVD.xpb--;$("tc").classList.remove("show");if(e.win&&!e.tower&&!e.raid&&!e.wb){clrWin(e.diff||"n",e.si);qAdd("clear",1);SVD.star[e.si]=Math.max(SVD.star[e.si]||0,e.stars||1)}if(e.tower)SVD.tower=Math.max(SVD.tower,e.floor-1);if(e.raid&&e.win&&!e.asl){const k=e.raid-1;raidCount(k,e.rd??0);if(!RAID[k].wk)SVD.rdd=today();qAdd("raid",1)}saveG();setTimeout(()=>stageModal(e,G.res),1000)}
   }
 }
@@ -3509,6 +3559,41 @@ function bgTick(){
   if(NET.role==="host")netTick();
   try{anxTick()}catch(e){}
 }
+
+/* v0.4 管理生命週期：移動原 m4，從不離場／重建 G。 */
+const LIVE={attached:false,game:null,home:null,lastHUD:0,loot:[],inventoryVersion:0,seenVersion:0};
+const battleHead=document.createElement('header');battleHead.id='battleHead';battleHead.innerHTML='<div><small>ADVENTURE ISLAND / KEEP GOING</small><h1>冒險島</h1></div><span>刷怪繼續，好裝先看。</span><button class="mini on" id="manageToggle">整理裝備 · G</button>';$('wrap').prepend(battleHead);
+const liveManager=document.createElement('aside');liveManager.id='liveManager';liveManager.setAttribute('aria-label','戰鬥中角色管理');liveManager.hidden=true;$('wrap').append(liveManager);
+const lootPanel=document.createElement('section');lootPanel.id='lootPanel';lootPanel.hidden=true;lootPanel.innerHTML='<h3>這輪，撿了什麼？</h3><div id="liveStatus"></div><div id="lootList"><div class="sub">等待下一件戰利品。</div></div>';$('wrap').append(lootPanel);
+$('manageToggle').onclick=()=>document.body.classList.contains('manager-closed')?openLiveManager():closeLiveManager();
+function openLiveManager(){if(!G||G.over)return;attachLiveManager();document.body.classList.remove('manager-closed');liveManager.hidden=false;$('m4').hidden=false;GR.tab=GR.tab||'e';renderGrowth();fitCanvas()}
+function closeLiveManager(){holdStop();stopHold();if(GR.au)autoStop('整理區已收合');document.body.classList.add('manager-closed');$('manageToggle').textContent='展開裝備 · G';fitCanvas();$('manageToggle').focus()}
+function attachLiveManager(){if(LIVE.attached)return;LIVE.home=$('m4').parentNode;LIVE.attached=true;LIVE.game=G;LIVE.loot=[];$('lootList').innerHTML='<div class="sub">等待下一件戰利品。</div>';GR.ci=G.net===2?NET.ci:(G.F.find(f=>f.isP&&!f.net)||{}).slot??mainCi();GR.sel=null;GR.tab='e';liveManager.append($('m4'));$('m4').hidden=false;liveManager.hidden=false;lootPanel.hidden=false;document.body.classList.add('battle-live');document.body.classList.remove('manager-closed');$('gbk').textContent='收合整理區（戰鬥繼續）';renderGrowth();fitCanvas()}
+function detachLiveManager(){if(!LIVE.attached)return;holdStop();stopHold();if(GR.au)autoStop('本場冒險已結束');LIVE.home.append($('m4'));$('m4').hidden=true;LIVE.attached=false;LIVE.game=null;liveManager.hidden=true;lootPanel.hidden=true;document.body.classList.remove('battle-live','manager-closed');$('gbk').textContent='← 返回';fitCanvas()}
+function syncBattleLayout(){if(G&&!G.over){if(LIVE.game!==G){detachLiveManager();attachLiveManager()}if(performance.now()-LIVE.lastHUD>250){LIVE.lastHUD=performance.now();const f=G.F.find(f=>f.isP&&(G.net===2?f.id===G.meId:!f.net));$('liveStatus').innerHTML=f?`<strong>${esc(f.name)}</strong> · HP ${fmtCP(Math.max(0,Math.round(f.hp)))}/${fmtCP(f.mhp)} · ${IN.auto?'自動戰鬥中':'手動戰鬥'} · ${fmt(Math.floor(G.f/60))}${G.net===2?' · '+(NET.gearError|| (NET.gearPending?'能力同步中':'房主已確認')):''}`:'連線同步中';$('manageToggle').textContent=document.body.classList.contains('manager-closed')?'展開裝備 · G':'收合裝備 · G';if(LIVE.seenVersion!==LIVE.inventoryVersion){const B=$('liveRefresh');if(B)B.textContent='顯示新掉落（'+SVD.inv.length+'）'}}}else if(LIVE.attached)detachLiveManager()}
+function gearCompareHTML(it){const p=prof(GR.ci),o=p.eq[it.sl],a=statsOf(GR.ci);let b;try{p.eq[it.sl]=it;b=statsOf(GR.ci)}finally{if(o)p.eq[it.sl]=o;else delete p.eq[it.sl]}const rows=[['攻擊','atk'],['生命上限','hp'],['MP 上限','mp'],['暴擊率','cr'],['減傷','df'],['掉寶加成','drop']];return '<table class="compare-table"><tr><th>角色能力</th><th>目前</th><th>換裝後</th><th>差異</th></tr>'+rows.map(([n,k])=>{let x=a[k]||0,y=b[k]||0;if(k==='df'){x=1-x;y=1-y}const d=y-x,pct=['cr','df','drop'].includes(k),f=v=>pct?(v*100).toFixed(1)+'%':fmtCP(v);return `<tr><td>${n}</td><td>${f(x)}</td><td>${f(y)}</td><td class="${d>0?'up':d<0?'dn':''}">${d>0?'+':''}${f(d)}</td></tr>`}).join('')+'</table>'}
+
+
+function renderGrowth(){const root=$('m4'),scroll=root.parentElement===liveManager?liveManager:root,top=scroll.scrollTop,bag=$('gbody').querySelector('.inv'),bagTop=bag?bag.scrollTop:0,active=document.activeElement,key=active&&active.dataset?Object.entries(active.dataset).find(([k])=>['do','f','id','t'].includes(k)):null;renderGrowthContent();root.classList.toggle('stats-view',GR.tab==='v');const body=$('gbody'),gt=body.querySelector('.gtop');if(gt){for(const cl of ['invbar','invf','inv']){const el=body.querySelector('.'+cl);if(el)body.insertBefore(el,gt)}const iv=body.querySelector('.inv');if(iv)iv.scrollTop=bagTop}scroll.scrollTop=top;if(key){const next=[...root.querySelectorAll('[data-'+key[0]+']')].find(e=>e.dataset[key[0]]===key[1]);if(next)next.focus({preventScroll:true})}}
+const statTab=document.createElement('button');statTab.dataset.t='v';statTab.textContent='角色素質';$('gtab').insertBefore(statTab,$('gtab').children[1]);
+function recordLoot(it,result){if(!G||G.over)return;LIVE.loot.unshift({id:it.id,n:it.n,ri:it.ri,sl:it.sl,result,time:G.f});LIVE.loot.length=Math.min(60,LIVE.loot.length);$('lootList').innerHTML=LIVE.loot.map(x=>`<button class="loot-row ${x.ri>=4?'important':''}" style="--rc:${RAR[x.ri][1]}" data-loot="${x.id}"><span class="rarity-label" style="--rc:${RAR[x.ri][1]}">${RAR[x.ri][0]}</span><b>${esc(x.n)}</b><small>${esc(x.result)}</small></button>`).join('')}
+$('lootList').onclick=e=>{const b=e.target.closest('[data-loot]');if(!b)return;const id=+b.dataset.loot,it=SVD.inv.find(x=>x.id===id);if(!it){toast('這件物品已穿戴、分解或出售；紀錄保留實際拾取去向');return}openLiveManager();GR.tab='e';GR.sel={src:'inv',id};renderGrowth();$('idet').scrollIntoView({block:'nearest'})};
+// 此入口只在真正資料提交後呼叫；預覽 cpWith / 比較不觸發。
+function syncEquipmentState(){if(!G||G.over)return;for(const f of G.F){if(!f.isP||f.net||G.net===2||!hasSlot(f.slot))continue;const S=statsOf(f.slot),h=JSON.stringify(S);if(f.equipmentHash===h)continue;f.equipmentHash=h;refreshP(f,S);if(G.net===1){G.cfg.stats[0]=S;netSend('actorGear',{epoch:G.cfg.gearEpoch,pl:0,st:S})}}
+ if(G.net===2&&NET.ok&&hasSlot(NET.ci)){const S=statsOf(NET.ci),h=JSON.stringify(S);if(NET.localGearHash!==h){NET.localGearHash=h;const p=prof(NET.ci);NET.gearPending={epoch:G.cfg.gearEpoch,rev:++NET.gearRevision,ci:NET.ci,profile:JSON.parse(JSON.stringify(p)),account:gearAccount(),itemIds:Object.values(p.eq).filter(Boolean).map(it=>it.id)};NET.gearSentAt=performance.now();netSend('gear',NET.gearPending)}}
+}
+function gearAccount(){const A=JSON.parse(JSON.stringify(SVD));delete A.inv;return A}
+// Local saves remain locally owned, as in the original P2P game. Host recomputes
+// formulas from bounded source data; no supplied st is accepted as a gear update.
+function receiveGear(d){if(NET.role!=='host'||!NET.ok||!G||G.over||G.net!==1||!d||d.epoch!==G.cfg.gearEpoch||!Number.isSafeInteger(d.rev))return;const f=G.F.find(x=>x.isP&&x.net);if(!f||d.ci!==f.slot||d.ci!==NET.rem.ci)return;
+ if(d.rev<=(NET.gearReceived||0)){if(d.rev===NET.gearReceived)netSend('gearAck',NET.lastGearAck);return}
+ try{if(JSON.stringify(d).length>500000)throw Error('size');const p=d.profile;if(!p||p.cls!==f.ci||(p.lv<f.lv||p.lv>MAXLV)||!p.eq||!d.account||!Array.isArray(d.itemIds))throw Error('profile');const ids=new Set();for(const [k,it]of Object.entries(p.eq)){if(!it)continue;if(!SLN[k]||it.sl!==k||!Number.isSafeInteger(it.id)||ids.has(it.id)||!d.itemIds.includes(it.id)||reqLv(it)>p.lv||!Number.isInteger(it.ri)||it.ri<0||it.ri>6)throw Error('item');ids.add(it.id)}const walk=(v,depth=0)=>{if(depth>14)throw Error('depth');if(typeof v==='number'&&(!Number.isFinite(v)||Math.abs(v)>1e15))throw Error('number');if(v&&typeof v==='object')for(const k of Object.keys(v)){if(['__proto__','constructor','prototype'].includes(k))throw Error('key');walk(v[k],depth+1)}};walk(d);const own=SVD;let st;try{SVD={...SVD,...d.account,ch:{...d.account.ch,[d.ci]:p}};st=statsOf(d.ci)}finally{SVD=own}for(const k of ['hp','mp','atk','sp','df','cr','cd','area'])if(!Number.isFinite(st[k])||st[k]<0)throw Error('stats');refreshP(f,st);G.cfg.stats[1]=st;NET.rem.st=st;NET.gearReceived=d.rev;NET.lastGearAck={epoch:d.epoch,rev:d.rev,st};netSend('gearAck',NET.lastGearAck)
+ }catch(e){netSend('gearAck',{epoch:d.epoch,rev:d.rev,error:'裝備資料無法驗證，請重新進入房間'});toast('訪客裝備同步失敗：資料不一致')}
+}
+function receiveGearAck(d){if(NET.role!=='guest'||!G||G.net!==2||!d||d.epoch!==G.cfg.gearEpoch||!NET.gearPending||d.rev!==NET.gearPending.rev)return;NET.gearPending=null;if(d.error){NET.gearError=d.error;toast(d.error);return}NET.gearError='';G.cfg.stats[1]=d.st;const f=G.F.find(x=>x.id===G.meId);if(f){f.S=d.st;f.ap=apOfP(f.ci,d.st.look,d.st.job,d.st.br,d.st.vis)} }
+function receiveActorGear(d){if(NET.role!=='guest'||!G||G.net!==2||!d||d.epoch!==G.cfg.gearEpoch||d.pl!==0||!d.st)return;G.cfg.stats[0]=d.st}
+setInterval(()=>{if(NET.gearPending&&G&&G.net===2&&NET.ok&&performance.now()-NET.gearSentAt>750){NET.gearSentAt=performance.now();netSend('gear',NET.gearPending)}},250);
+
 loadSave();buildKM();offlineGain();setTimeout(()=>{if(signable())toast("📅 今天還沒簽到！到「任務／成就」領取簽到獎勵")},1500);setGfx(SVD.gfx||"auto",true);applyVol();show("m0");requestAnimationFrame(loop);
 
 /* ============ 遊戲封面 ============ */

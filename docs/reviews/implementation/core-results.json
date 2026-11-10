@@ -1,0 +1,50 @@
+{
+  "checks": [
+    "G01 same battle and advancing simulation",
+    "G02/G03/G05 committed stats, absolute resources, evolution, cooldown and rage",
+    "G03 dead actor does not revive on unequip",
+    "B02 batch excludes arrivals and rechecks locks",
+    "B01 drop preserves selection and DOM",
+    "B03 factual auto dismantle receipt",
+    "V01 desktop and narrow overflow/16:9",
+    "S01 reload preserves item and character IDs"
+  ],
+  "layouts": [
+    {
+      "width": 1280,
+      "height": 720,
+      "overflow": false,
+      "ratio": 1.7778346859979512,
+      "manager": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "ratio": 1.7778087247153849,
+      "manager": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "ratio": 1.7778175545936798,
+      "manager": true
+    },
+    {
+      "width": 800,
+      "height": 900,
+      "overflow": false,
+      "ratio": 1.7777777777777777,
+      "manager": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "ratio": 1.7777777777777777,
+      "manager": false
+    }
+  ],
+  "errors": []
+}
