@@ -1,0 +1,44 @@
+{
+  "checks": [
+    "G01: real original simulation advances while new manager is visible",
+    "V01: fixed comparison/actions visible at all three desktop sizes",
+    "G02/G03/G05: actual click equips original item; actor, stats, HP/MP/CD/rage/evolution and existing projectile remain consistent",
+    "G04: button unequip and native pointer double-click equip",
+    "G04: original advanced enhancement commits to current actor and returns to comparison",
+    "B01: arrivals do not replace bag DOM, item identity or scroll",
+    "B02: fixed confirmed ID set, new arrivals excluded and locks rechecked",
+    "I01: keyboard input inside manager does not attack",
+    "G01: collapse/expand does not change explicit pause or game identity",
+    "S01: original save IDs and equipment survive reload"
+  ],
+  "layouts": [
+    {
+      "width": 1280,
+      "height": 720,
+      "overflow": false,
+      "ratio": 1.7778400897292101,
+      "actionVisible": true,
+      "detailVisible": true,
+      "actionBottom": 681
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "ratio": 1.7777857941632698,
+      "actionVisible": true,
+      "detailVisible": true,
+      "actionBottom": 867
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "ratio": 1.7778242812530183,
+      "actionVisible": true,
+      "detailVisible": true,
+      "actionBottom": 1043
+    }
+  ],
+  "errors": []
+}
