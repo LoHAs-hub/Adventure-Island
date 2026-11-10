@@ -1,3 +1,5 @@
+> 最新正式整合及驗證狀態見 docs/STATUS.md、docs/reviews/implementation/VALIDATION.md。以下保留原完整任務規格；其中「尚未實作」為接手時背景。
+
 # 實作 Prompt：冒險島 v0.4 全版美術與即時裝備管理
 
 你是此專案的實作端。請在交接包提供的既有 JavaScript／Canvas 2D 遊戲上完成下列改版，交付能玩的正式遊戲、驗證證據及 Git 提交。不要以獨立樣板取代原遊戲。

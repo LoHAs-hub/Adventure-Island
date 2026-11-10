@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "slam",
+    "charge",
+    "rain:42:410",
+    "laser:55",
+    "nova",
+    "fan"
+  ],
+  "quality": [
+    "low",
+    "high"
+  ],
+  "errors": [],
+  "status": "Rendering PASS with dense decorative particles; original geometry reused above effects. Collision-by-collision gameplay remains unverified."
+}

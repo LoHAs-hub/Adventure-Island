@@ -38,7 +38,7 @@
     {
       "requested": "m9",
       "id": "m9",
-      "text": 413,
+      "text": 414,
       "overflow": false,
       "controls": 15
     },
@@ -115,7 +115,7 @@
     {
       "requested": "m11",
       "id": "m11",
-      "text": 232,
+      "text": 235,
       "overflow": false,
       "controls": 4
     },
@@ -143,7 +143,7 @@
     {
       "requested": "m4",
       "id": "m4",
-      "text": 1201,
+      "text": 1137,
       "overflow": false,
       "controls": 34
     },
@@ -185,7 +185,8 @@
   ],
   "atlas": {
     "classes": 5,
-    "enemies": 288,
+    "definitions": 288,
+    "enemyDefinitions": 283,
     "bodies": [
       "man",
       "slime",

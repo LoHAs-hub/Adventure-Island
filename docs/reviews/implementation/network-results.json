@@ -3,7 +3,8 @@
   "guestEquipment": "PASS: host recomputed and acknowledged",
   "hostEquipment": "PASS: guest received authoritative source",
   "staleEpochAndRevision": "PASS: ignored",
-  "disconnect": "PASS: original disconnect state",
+  "disconnect": "PASS: disconnected actor remains dead",
+  "unknownItem": "PASS: rejected ID absent from room inventory and host loot",
   "errors": [],
   "unverified": [
     "Internet WebRTC/STUN transport",

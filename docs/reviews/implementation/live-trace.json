@@ -2,7 +2,7 @@
   {
     "step": 0,
     "sameGame": true,
-    "frame": 38,
+    "frame": 37,
     "kills": 0,
     "position": [
       180,
@@ -19,7 +19,7 @@
   {
     "step": 1,
     "sameGame": true,
-    "frame": 58,
+    "frame": 56,
     "kills": 0,
     "position": [
       180,
@@ -36,10 +36,10 @@
   {
     "step": 2,
     "sameGame": true,
-    "frame": 78,
-    "kills": 0,
+    "frame": 74,
+    "kills": 1,
     "position": [
-      227.60000000000008,
+      278,
       50
     ],
     "actorAttack": 22,
@@ -53,10 +53,10 @@
   {
     "step": 3,
     "sameGame": true,
-    "frame": 96,
-    "kills": 1,
+    "frame": 94,
+    "kills": 2,
     "position": [
-      374.0000000000001,
+      380.2784,
       50
     ],
     "actorAttack": 22,
@@ -70,11 +70,11 @@
   {
     "step": 4,
     "sameGame": true,
-    "frame": 112,
+    "frame": 115,
     "kills": 2,
     "position": [
-      421.0784000000003,
-      50
+      427.87839999999966,
+      68.972
     ],
     "actorAttack": 22,
     "formulaAttack": 22,
@@ -87,14 +87,14 @@
   {
     "step": 5,
     "sameGame": true,
-    "frame": 131,
+    "frame": 136,
     "kills": 2,
     "position": [
-      356.4784000000007,
-      50
+      499.2783999999992,
+      68.972
     ],
-    "actorAttack": 68,
-    "formulaAttack": 68,
+    "actorAttack": 82,
+    "formulaAttack": 82,
     "hp": 669,
     "managerOpen": true,
     "tab": "e",
@@ -104,15 +104,15 @@
   {
     "step": 6,
     "sameGame": true,
-    "frame": 152,
-    "kills": 10,
+    "frame": 155,
+    "kills": 5,
     "position": [
-      150.80640000000074,
-      50
+      697.7423999999992,
+      68.972
     ],
-    "actorAttack": 72,
-    "formulaAttack": 72,
-    "hp": 1075,
+    "actorAttack": 82,
+    "formulaAttack": 82,
+    "hp": 808.4939999999999,
     "managerOpen": true,
     "tab": "e",
     "pause": false,
@@ -121,15 +121,15 @@
   {
     "step": 7,
     "sameGame": true,
-    "frame": 175,
-    "kills": 10,
+    "frame": 176,
+    "kills": 5,
     "position": [
-      228.28000000000102,
-      50
+      627.2047999999984,
+      68.972
     ],
-    "actorAttack": 72,
-    "formulaAttack": 72,
-    "hp": 1075,
+    "actorAttack": 82,
+    "formulaAttack": 82,
+    "hp": 814.2559999999999,
     "managerOpen": true,
     "tab": "e",
     "pause": false,
@@ -138,15 +138,15 @@
   {
     "step": 8,
     "sameGame": true,
-    "frame": 191,
-    "kills": 13,
+    "frame": 195,
+    "kills": 5,
     "position": [
-      337.5080000000011,
-      50
+      558.4703999999977,
+      68.972
     ],
-    "actorAttack": 72,
-    "formulaAttack": 72,
-    "hp": 1075,
+    "actorAttack": 82,
+    "formulaAttack": 82,
+    "hp": 822.9119999999998,
     "managerOpen": true,
     "tab": "e",
     "pause": false,
@@ -155,15 +155,15 @@
   {
     "step": 9,
     "sameGame": true,
-    "frame": 209,
-    "kills": 14,
+    "frame": 214,
+    "kills": 7,
     "position": [
-      468.20240000000103,
-      50
+      359.4127999999976,
+      68.972
     ],
-    "actorAttack": 72,
-    "formulaAttack": 72,
-    "hp": 1080,
+    "actorAttack": 82,
+    "formulaAttack": 82,
+    "hp": 897.4159999999997,
     "managerOpen": true,
     "tab": "e",
     "pause": false,
@@ -172,15 +172,15 @@
   {
     "step": 10,
     "sameGame": true,
-    "frame": 229,
-    "kills": 16,
+    "frame": 231,
+    "kills": 10,
     "position": [
-      658.5008000000012,
-      50
+      186.57439999999764,
+      68.972
     ],
-    "actorAttack": 76,
-    "formulaAttack": 76,
-    "hp": 1144,
+    "actorAttack": 86,
+    "formulaAttack": 86,
+    "hp": 1148,
     "managerOpen": true,
     "tab": "e",
     "pause": false,
@@ -189,15 +189,15 @@
   {
     "step": 11,
     "sameGame": true,
-    "frame": 248,
-    "kills": 17,
+    "frame": 252,
+    "kills": 10,
     "position": [
-      719.1648000000018,
-      50
+      229.7951999999978,
+      68.972
     ],
-    "actorAttack": 76,
-    "formulaAttack": 76,
-    "hp": 1144,
+    "actorAttack": 86,
+    "formulaAttack": 86,
+    "hp": 1148,
     "managerOpen": true,
     "tab": "e",
     "pause": false,

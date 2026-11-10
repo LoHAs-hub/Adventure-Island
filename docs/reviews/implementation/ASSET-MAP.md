@@ -6,7 +6,7 @@
 |---|---|---|---|
 | UI／全部面板 | show／menuGo／PANELS／共用 CSS | 26 節點；m0 導向 m17，m18 舊導向仍由共用樣式覆蓋 | system-m*.png；visual-results.json |
 | 裝備圖示 | COMIC_ICONS／COMIC_SLOT／comicIcon／itemIconC | 12 部位、5 職業武器與槍手；單檔內嵌 SVG；快取包含武器形狀／稀有度／遠古系列 | SVG 無外部請求；原 ID／稀有度7階保留 |
-| 玩家／外觀 | drawChibi／apOfP／chHairFront／chHairBack／chWeapon | 原腳底、800×450座標；12平順髮型、8臉、6膚、14服裝資料項；5職業BR全部分支；待機武器向外避免遮臉 | atlas-characters.png；選角／美容／建角共用；髮色彩虹以紫色主面與原其他虹彩配件呈現 |
+| 玩家／外觀 | drawChibi／apOfP／chHairFront／chHairBack／chWeapon | 原腳底、800×450座標；12平順髮型、8臉、6膚、14服裝資料項；5職業BR全部分支；待機武器向外避免遮臉 | atlas-characters.png；選角／美容／建角共用；彩虹髮色保留獨立平塗條帶 |
 | 敵人 | dEnt／13 draw*母型 | T共288定義含5玩家，敵方283；原sc／朝向／出生／動畫／配色／BOSS裝飾 | atlas-enemies.png；全部資料映射；非逐幀動畫驗收 |
 | 寵物／神獸 | drawPet／drawPets／drawBeast／drawBeastF | 9寵物、5神獸；保留原追隨、攻擊、拾取位置與覺醒／星級 | atlas-companions.png；低畫質減光暈 |
 | 動作 | KF／poseOf／animate／chWeapon | 原關節與時間表不變；套用新輪廓與平塗；只有非攻擊武器朝向視覺調整 | compatibility-results.json 核對KF／ANK；逐攻擊幀組合未全部實測 |

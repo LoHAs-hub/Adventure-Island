@@ -1,3 +1,5 @@
+> 2026-11-10 正式實作更新：game/index.html已套用全範圍美術與即時換裝。本文件以下是設計交接時的背景／需求歷史；完成狀態以STATUS及reviews/implementation/VALIDATION.md為準。原始基準改由Git 3625d38／舊設計ZIP取用。後續繼續未驗證案例，不重做已定案設計。
+
 # 專案背景、需求與方向：提供給新的實作端聊天室
 
 更新：2026-11-10（Asia/Taipei）。本文件從本次協作對話起點整理，與 [STATUS](STATUS.md)、[DECISIONS](DECISIONS.md) 配合使用。美術版本 v0.4，正式遊戲尚未套用新版。

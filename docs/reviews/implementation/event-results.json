@@ -6,6 +6,7 @@
     "G04 actual pointer double-click equip",
     "G04 equipped enhancement commits actor stats",
     "I01 manager keyboard focus does not attack",
+    "V02 inventory tile keyboard selection",
     "V02 modal restores invoking focus",
     "C02 all three quality modes render live battle"
   ],

@@ -1,0 +1,57 @@
+{
+  "states": [
+    {
+      "test": "G03 lower max clamps resources",
+      "pass": true
+    },
+    {
+      "test": "G03 higher max does not heal",
+      "pass": true
+    },
+    {
+      "test": "B03 full locked inventory preserves existing items and reports sale",
+      "pass": true
+    },
+    {
+      "test": "V04 long name and large number no horizontal overflow",
+      "pass": true
+    },
+    {
+      "test": "V04 empty filter does not break selected ID",
+      "pass": true
+    }
+  ],
+  "contrast": [
+    {
+      "text": "#202A32",
+      "bg": "#B9DFF6",
+      "ratio": 10.390713746628899
+    },
+    {
+      "text": "#202A32",
+      "bg": "#F3F6F8",
+      "ratio": 13.449127587174116
+    },
+    {
+      "text": "#526775",
+      "bg": "#FBFCFD",
+      "ratio": 5.7496865750648425
+    },
+    {
+      "text": "#245840",
+      "bg": "#E1EFE8",
+      "ratio": 6.960233749629935
+    },
+    {
+      "text": "#8C303A",
+      "bg": "#F5D2D6",
+      "ratio": 5.799278116735334
+    },
+    {
+      "text": "#F3F6F8",
+      "bg": "#202A32",
+      "ratio": 13.449127587174116
+    }
+  ],
+  "limitation": "Token contrast only; exhaustive per-pixel Canvas text and every disabled/hover state not measured"
+}
